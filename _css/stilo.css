@@ -1,0 +1,655 @@
+/*pra todos*/
+*{
+    color: white;
+    font-family: "Roboto", sans-serif; 
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+    
+}
+/*variaveis*/
+:root{
+    --cor-primary:rgb(51, 228, 51);
+    --cor-secundary:#0e0e0e;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
+}
+p{
+    font-weight: 300;
+    font-style: italic;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.2em;
+}
+.flex{
+    display: flex;
+     
+}
+.link {
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+}
+.btn-tds{
+    background-color: var(--cor-primary);
+    padding: 3px 20px;
+    border-radius: 6px;
+    border: 2px solid var(--cor-primary);
+    transition: 0.4s;
+    margin-top: 15px;
+    animation: piscar ease 1s infinite;
+}
+@keyframes piscar{
+    0%{
+        box-shadow: 0 0 5px var(--cor-primary);
+    }
+    50%{
+        box-shadow: none;
+    }
+}
+.btn-tds a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.btn-tds:hover{
+    background-color: transparent;
+    animation: none;
+}
+::-webkit-scrollbar{
+    background-color:white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primary);
+    border-radius: 10px;
+    
+}
+
+
+/*fim todos*/
+/*principal*/
+main{
+    padding: 0px;
+    margin: 0px;
+}
+/*Rolagem*/
+.foto, .habilidades, .container-2, .img-2, .sobre-mim, .container3, .projetos:nth-child(1), .projetos:nth-child(2), .projetos:nth-child(3), .projetos:nth-child(4), .titulo, .subtitulo, .carta{
+    visibility: hidden;
+}
+/*sessao 1*/
+
+section.inicio{
+    background-image: url(../Imagens/fundo.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;  
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.foto {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 20px;
+    width: 50%;
+    padding-left: 20px;
+    
+}
+
+.foto img {
+    position: relative;
+    width: 280px;
+    height: 450px;
+    margin-bottom: 10px;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 0px 0px 10px var(--cor-primary); 
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+@keyframes flutuar{
+    0%{
+        top: 10px;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+    color: var(--cor-primary);
+    text-shadow: 0 0 20px rgb(85, 84, 84);
+}
+.subtitulo h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.subtitulo span{
+    color: var(--cor-primary);
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    margin-left:40px ;
+    
+}
+
+.apresentacao ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.apresentacao h3{
+    font-size: 25px;
+}
+
+.apresentacao p{
+    font-size: 18px;
+    margin: 0;
+}
+
+/*fim sessao 1*/
+/*sessao 2*/
+section.inicio2{
+    background-image: url(../Imagens/fio-de-ouro.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    padding-bottom: 80px;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.habilidades li img{
+    width: 25px;
+}
+.habilidades ul{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.habilidades li{
+    margin:20px 0;
+}
+.habilidades h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.habilidades{
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 25px;
+    height: 100%;
+    padding-bottom: 50px;
+    margin-top: 70px;
+    border-radius:  20px;
+    backdrop-filter: blur(5px);
+    /* background-color: var(--cor-secundary); */
+    box-shadow: 0 0 15px #aaaaaa;
+    cursor: pointer;
+}
+.marque{
+    width: 60%;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px white;
+}
+
+
+
+.habilidades h2{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    color:var(--cor-primary);
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+li div{
+    justify-content: space-between;
+}
+.habilidades .barra{
+   background-color: white;
+   backdrop-filter: blur(30px);
+   border: 1px solid black;
+   display: block;
+   height: 25px;
+   position: relative;
+   overflow: hidden;
+   transition: 0.5s ease-in-out;
+   border-radius: 10px;
+   
+   
+}
+.clique{
+    background-color: var(--cor-secundary);
+}
+.barra > span{
+    height: 30px;
+    background: linear-gradient(to left, rgb(51, 228, 51) 0%, #fd1d1d 50%, #fcb045 100%);
+    position: absolute;
+}
+.html, .css{
+    width: 70%;
+    animation: html 5s;
+}
+.javascript, .python{
+    width: 55%;
+    animation: css 5s;
+}
+.php{
+    width:40% ;
+    animation: javascript 5s;
+}
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 70%; 
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 55%; 
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 40%; 
+    }
+}
+/*fim sessao 2*/
+/*sessao 3*/
+section.inicio3{
+    background-color:black;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 20px 20px;
+}
+.sobre-mim .flex{
+    justify-content: space-between;
+}
+.sobre-mim img{
+    float: right;
+    width: 70px;
+    height: 50px;
+    margin: 0px 20px 0 10px;
+    
+}
+
+.container-2{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--cor-secundary);
+    padding: 30px;
+    
+}
+section.inicio3 h1 {
+    text-align: center;
+    padding: 10px 0 30px 0;
+    font-weight: 500;
+    
+}
+
+
+.img-2 img{
+    width: 200px;
+    border-radius: 10px; 
+    
+    box-shadow: 0px 0 5px white;
+}
+.img-2{
+    margin-right: 25px;
+
+}
+.sobre-mim span{
+    color: var(--cor-primary);
+}
+.sobre-mim p {
+    font-size:18px;
+    text-align: justify;
+    font-weight: 300;
+    padding-right: 20px;
+}
+.sobre-mim h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.rede-sociais1 a i {
+    text-align: left;
+}
+/* fim sessao 3*/
+
+/*section 04*/
+section.inicio4{
+    background: black;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-top: 40px;
+    margin: 0;
+}
+.container3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius:  20px;
+    background:transparent;
+    padding: 30px;
+    text-align: center;
+}
+.flex-proj{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.container3 .flex{
+    flex-direction: row;
+}
+.container3 h2{
+    text-align: center;
+    padding: 10px 0;
+    color: var(--cor-primary);
+}
+.container3 .flex{
+    gap: 30px;
+    margin: 20px;
+    text-align: center ;
+    
+}
+.projetos{
+    height: 515px;
+    background-color: #1f1e1e;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px #0e0e0e;;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px; 
+    position: relative;
+
+}
+/* .projetos:nth-child(4){
+    background-image: url(../Imagens/fotos-projetos/em-breve.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+.container3 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+}
+.botao{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.botao a{
+    width: 50%;
+    padding: 0; 
+    margin: 5px 8px;
+}
+.botao i{
+    font-size: 15px;
+    color: var(--cor-primary);
+    position: relative;
+    top: -1px;
+}
+.botao button {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+    
+    
+}
+.hov{
+    transition: 0.3s;
+}
+.hov:hover{
+    box-shadow: 0 0 5px white;
+    transform: scale(1.04);
+    
+}
+.icons-linguagem img{
+    width: 35px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+.icons-linguagem img:nth-child(2){
+    left: 40px;
+}
+.icons-linguagem img:nth-child(3){
+    left: 75px;
+}
+.proj{
+    background-image: url(../Imagens/fotos-projetos/lista-tarefas.png.png);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.proj2{
+    background-image: url(../Imagens/fotos-projetos/Projeto-form.png.png);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.proj3{
+    background-image: url(../Imagens/fotos-projetos/Previsao-do-temp.png);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.proj4{
+    background-image: url(../Imagens/fotos-projetos/image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.hover{
+    transition: 0.5s;
+}
+.hover:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(122, 122, 122);
+}
+
+.container3 button{
+    margin-top: 20px;
+    background-color: rgb(13, 15, 13);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+
+}
+.mais{
+    display: flex;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+.mais a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.mais i{
+    position: absolute;
+    left:147px ;
+    top: 2px;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.mais:hover i {
+    left:152px;
+    color: var(--cor-primary)
+}
+.mais:hover a{
+    color: var(--cor-primary);
+}
+.direita{
+    display: flex;
+    justify-content: end;
+}
+
+/* fim sessao 4*/
+
+/* sessao 5*/
+section.rodape{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 150px;  
+    padding-top: 40px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.icons{
+    padding: 5px;
+    font-size: 30px;
+    color:var(--cor-primary);
+    
+}
+
+.rodape .flex{
+    justify-content: center;
+    text-align: left;
+    margin: 10px;
+}
+.line-footer p i{
+    font-size: 30px;
+    color:var(--cor-primary);
+}
+
+.line-footer p a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px; 
+    font-weight: 400;
+    font-style: italic;
+}
+.line-footer p{
+    padding-left: 10px;
+}
+.borda{
+    border-top:1px solid var(--cor-primary);
+}
+/*botao subir para o inicio*/
+
+.icon{
+    opacity: 0;
+    
+}
+.cima:hover i{
+    transform: scale(1.1);
+    opacity: 0.8;
+    
+}
+.view{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    color: var(--cor-primary);
+    z-index: 8;
+    font-size: 35px;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

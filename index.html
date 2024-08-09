@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- link do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="_css/stilo.css">
+    <link rel="stylesheet" href="_css/navegacao.css">
+    <link rel="stylesheet" href="_css/mobile.css">
+    <!-- link script -->
+    <script src="script.js" defer></script>
+    <!-- link do scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- link do icone da pagina -->
+    <link rel="icon" href="Imagens/icons/programacao.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div id="header" class="container-nav">
+            <div class="flex ">
+                <div class="texto">
+                    <a href="index.html">
+                        <p>Port<span>ifolio</span></p>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="container-paragrafo">
+                        <li class="diferenca"><a href="#">Inicio</a></li>
+                        <li class="diferenca "><a href="#sobre">Sobre</a></li>
+                        <li class="diferenca "><a href="#habilidades">Habilidades</a></li>
+                        <li class="diferenca "><a href="#projetos">Projetos</a></li>
+                        <button class="botao-nav"><a href="cursos/index.html">Cursos</a></button>
+                    </ul>
+
+                    <div class="mobile-menu" id="mobileMenu">
+
+                        <ul class="nav-links-mobile" id="menu-item">
+                            <li><a href="#" >Inicio</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#habilidades">Habilidades</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <button class="botao-nav"><a href="cursos/index.html">Cursos</a></button>
+                        </ul>
+                    </div>
+                    <button class="hamberger" id="hambergeButton" onclick="this.classList.toggle('ativar')">
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                    </button>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <!-- section da pagina inicial -->
+        <section id="#" class="inicio">
+            <div class="apresentacao">
+                <div class="titulo">
+                    <h1>Transformando desafios em soluçoes criativas<span>.</span></h1>
+                </div>
+                <div class="subtitulo">
+                    <h2>Desenvolvedor Web<span>.</span></h2>
+                    <p>Sou estudante de programacao, Meu objetivo é encontrar uma oportunidade onde eu possa contribuir com meu entusiasmo e habilidades, ao mesmo tempo em que cresço profissionalmente e agrego valor ao time e aos projetos nos quais estou envolvido.</p>
+                </div>
+                <div class="carta ">
+                    <button class="btn-tds"><a href="pdf/currículo Matheus.pdf"
+                            target="_blank">Curriculo</a></button>
+
+                </div>
+            </div>
+            <div class="foto">
+                 <img src="Imagens/foto-principal.jpg" alt="Matheus santos">
+                <!-- <img src="Imagens/image-code.jpeg" alt="Matheus santos"> -->
+            </div>
+        </section>
+        <!--Fim section da pagina inicial -->
+        <!-- section sobre mim -->
+        <section id="sobre" class="inicio3">
+            <div class="container-2">
+                <h1>Sobre mim</h1>
+                <div class="flex">
+                    <div class="img-2">
+                        <img src="Imagens/matheus2.jpg" alt="">
+                    </div>
+                    <div class="sobre-mim">
+                        <h2>Muito prazer sou, <br> <span>Matheus santos</span>.</h2>
+                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/ffffff/quote-left.png" alt="quote-left"/>
+                        <p>Olá, meu nome é Matheus, e sou estudante de Análise e Desenvolvimento de Sistemas. Sou uma pessoa dedicada, esforçada e focada em alcançar meus objetivos acadêmicos e profissionais. Tenho um grande interesse em tecnologia e sempre busco aprofundar meus conhecimentos em programação, desenvolvimento de software e novas tendências na área. Meu comprometimento e determinação me impulsionam a enfrentar desafios e a buscar soluções inovadoras. Estou sempre pronto para aprender e colaborar em projetos que contribuam para meu crescimento e para o sucesso da equipe.</p>
+                        <div class="rede-sociais1">
+                            <a href="https://www.instagram.com/theus_santtos2/" target="_blank"><i
+                                    class="icons bi bi-instagram "></i></a>
+                            <a href="https://github.com/matheus1289" target="_blank"><i
+                                    class="icons bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"><i
+                                    class=" icons bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim section da pagina sobre mim -->
+        <!-- section habilidades -->
+        <section id="habilidades" class="inicio2">
+            <div class="habilidades" onclick="this.classList.toggle('clique')">
+                <h2>Minhas <span>Habilidades</span>.</h2>
+                <ul>
+                    <li>
+                        <div class="flex">
+                            <h3>HTML <img src="Imagens/icons/icons8-html5-48.png" alt=""></h3>
+                            <p>70%</p>
+                        </div>
+
+                        <span class="barra"><span class="html"></span></span>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <h3>CSS <img src="Imagens/icons/icons8-css-48.png" alt=""></h3>
+                            <p>70%</p>
+                        </div>
+                        <span class="barra"><span class="css"></span></span>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <h3>JAVASCRIPT <img src="Imagens/icons/icons8-javascript-48.png" alt=""></h3>
+                            <p>55%</p>
+                        </div>
+
+                        <span class="barra"><span class="javascript"></span></span>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <h3>PYTHON <img src="Imagens/icons/icons8-python-48.png" alt=""></h3>
+                            <p>55%</p>
+                        </div>
+
+                        <span class="barra"><span class="python"></span></span>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <h3>PHP <img src="Imagens/icons/icons8-php-48.png" alt=""></h3>
+                            <p>40%</p>
+                        </div>
+
+                        <span class="barra"><span class="php"></span></span>
+                    </li>
+                </ul>
+                <div class="marque">
+                    <marquee >
+                        <img src="Imagens/icons/icons8-css-48.png" alt="css">
+                        <img src="Imagens/icons/icons8-html5-48.png" alt="html">
+                        <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
+                        <img src="Imagens/icons/icons8-php-48.png" alt="php">
+                        <img src="Imagens/icons/icons8-python-48.png" alt="python">
+                        <img src="Imagens/icons/icons8-bootstrap-48.png" alt="bootstrap">
+                        <img src="Imagens/icons/icons8-mysql-48.png" alt="MYsql">
+                    </marquee>
+                </div>
+            </div>
+
+        </section>
+        <!--Fim section da pagina habilidades -->
+        <!-- section de projetos -->
+        <section id="projetos" class="inicio4">
+            <div class="container3">
+                <h2>Projetos</h2>
+                <div class="flex-proj">
+                    <!-- projeto 1 -->
+                    <div class="projetos hover">
+                        <div class="proj">
+                            <div class="icons-linguagem">
+                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
+                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
+                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
+                            </div>
+                        </div>
+                        <h3>Lista de tarefas</h3>
+                        <p>Projeto desenvolvido utilizando HTML, CSS e JavaScript, com a finalidade de criar uma lista de tarefas. O projeto permite que você adicione, edite, exclua e marque tarefas como concluídas. Além disso, mesmo após atualizar a página, as tarefas permanecem salvas, pois são armazenadas no armazenamento local do navegador (localStorage). </p>
+                        <div class="botao">
+                            <a  href="https://tarefasmj.netlify.app" target="_blank"><button class="hov"><i
+                                class="bi bi-globe-americas"></i> Projeto</button></a>
+                            <a  href="https://github.com/matheus1289/Lista-tarefas" target="_blank"><button class="hov"><i
+                                class="icons bi bi-github"></i>Repositório</button></a>
+                        </div>
+                    </div>
+                    <!-- fim projeto 1 -->
+                    <!-- projeto 2 -->
+                    <div class="projetos hover">
+                        <div class="proj2">
+                            <div class="icons-linguagem">
+                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
+                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
+                            </div>
+                        </div>
+                        <h3>Formulario</h3>
+                        <p>Desenvolvi um projeto utilizando HTML e CSS que apresenta um formulário de login responsivo, adaptado tanto para desktop quanto para dispositivos móveis. O formulário inclui campos para nome, email e senha. Caso o usuário não possua cadastro, há a opção de se registrar. Além disso, se o usuário esquecer a senha, existe um link disponível para recuperação da mesma. </p>
+                        <div class="botao">
+                            <a  href="https://formulariomj.netlify.app" target="_blank"><button class="hov"><i
+                                class="bi bi-globe-americas"></i> Projeto</button></a>
+                            <a  href="https://github.com/matheus1289/formulario" target="_blank"><button class="hov"><i
+                                class="icons bi bi-github"></i>Repositório</button></a>
+                        </div>
+                    </div>
+                    <!-- fim projeto 2 -->
+                    <!-- projeto 3 -->
+                    <div class="projetos hover">
+                        <div class="proj3">
+                            <div class="icons-linguagem">
+                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
+                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
+                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
+                            </div>
+                        </div>
+                        <h3>Previsão do tempo</h3>
+                        <p>Este projeto utiliza a API gratuita da OpenWeather para fornecer informações climáticas detalhadas. Desenvolvido com JavaScript, CSS e HTML, a aplicação permite que os usuários consultem a previsão do tempo de maneira simples e intuitiva, para obter dados climáticos, como temperatura, umidade e condições gerais do tempo  (ensolarado, nublado, chuva, etc.).</p>
+                        <div class="botao">
+                            <a  href="https://previsao-tempomj.netlify.app" target="_blank"><button class="hov"><i
+                                class="bi bi-globe-americas"></i> Projeto</button></a>
+                            <a  href="https://github.com/matheus1289/Previsao-do-tempo" target="_blank"><button class="hov"><i
+                                class="icons bi bi-github"></i>Repositório</button></a>
+                        </div>
+                    </div>
+                    <!--fim projeto 3 -->
+                    <!-- projeto 4 -->
+                    <div class="projetos hover">
+                        <div class="proj4">
+                            <!-- <div class="icons-linguagem">
+                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
+                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
+                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
+                            </div> -->
+                        </div>
+                        <h3>Projetos em breve</h3>
+                        <p>Estou dedicando meu tempo a estudar e aprender novas competências para poder realizar novos projetos e aprimorar ainda mais minhas habilidades. Acredito que esse esforço contínuo me permitirá alcançar meus objetivos e contribuir de maneira significativa em qualquer desafio que eu enfrentar. <br> Muito Obrigado!!!😊👍 </p>
+                        <div class="botao">
+                            <a  href="Imagens/fotos-projetos/em-breve.png" target="_blank"><button class="hov"><i
+                                class="bi bi-globe-americas"></i> Projeto</button></a>
+                            <a  href="Imagens/fotos-projetos/em-breve.png" target="_blank"><button class="hov"><i
+                                class="icons bi bi-github"></i>Repositório</button></a>
+                        </div>
+                    </div>
+
+                    <!--fim projeto 4 -->
+                </div>
+                <div class="direita">
+                    <div class="mais">
+                        <p><a href="https://github.com/matheus1289?tab=repositories" target="_blank">Ver Mais Projetos</a></p>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim section da pagina projetos -->
+        <!-- section final do rodape -->
+        <section class="rodape">
+            <div class="flex">
+
+                <div class="rede-sociais">
+                    <a href="https://www.instagram.com/theus_santtos2/" target="_blank"><i
+                            class="icons bi bi-instagram"></i></a>
+                    <a href="https://github.com/matheus1289" target="_blank"><i class="icons bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"><i
+                            class=" icons bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i></i> <a
+                        href="mailto:Mass.josse72@gmail.com">mass.josse72@gmail.com</a></p>
+            </div>
+        </section>
+        <div class="cima">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill icon"></i></i></a>
+        </div>
+    </main>
+</body>
+</html>
