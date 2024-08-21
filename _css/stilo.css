@@ -478,41 +478,25 @@ section.inicio4{
 .icons-linguagem img:nth-child(3){
     left: 75px;
 }
-.proj{
+.proj, .proj2, .proj3, .proj4{
     background-image: url(../Imagens/fotos-projetos/lista-tarefas.png.png);
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 40%;
     border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
 }
 .proj2{
     background-image: url(../Imagens/fotos-projetos/Projeto-form.png.png);
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
+
 }
 .proj3{
     background-image: url(../Imagens/fotos-projetos/Previsao-do-temp.png);
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
+
 }
 .proj4{
     background-image: url(../Imagens/fotos-projetos/image.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
 }
 .hover{
     transition: 0.5s;
