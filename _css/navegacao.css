@@ -63,7 +63,7 @@ header .container-nav{
 }
 
 
-.botao-nav{
+.botao-nav {
     background:var(--cor-primary);
     margin-right: 20px;
     border: 2px solid var(--cor-primary);
@@ -74,11 +74,14 @@ header .container-nav{
     font-weight: 500;
     display: inline-block; 
     transition: 0.5s;
+    height: 30px;
+    
       
 }
 .botao-nav a{
     text-decoration: none;
     color: white;
+    
 }
 
 .botao-nav:hover{
