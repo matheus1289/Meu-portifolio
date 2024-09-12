@@ -231,7 +231,6 @@ section.inicio2{
     margin-top: 70px;
     border-radius:  20px;
     backdrop-filter: blur(5px);
-    /* background-color: var(--cor-secundary); */
     box-shadow: 0 0 15px #aaaaaa;
     cursor: pointer;
 }
@@ -256,7 +255,7 @@ li div{
     justify-content: space-between;
 }
 .habilidades .barra{
-   background-color: rgb(187, 182, 182);
+   background-color: rgb(214, 214, 214);
    backdrop-filter: blur(30px);
    border: 1px solid black;
    display: block;
