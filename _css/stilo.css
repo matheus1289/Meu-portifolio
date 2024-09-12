@@ -260,7 +260,7 @@ li div{
    backdrop-filter: blur(30px);
    border: 1px solid black;
    display: block;
-   height: 20px;
+   height: 23px;
    position: relative;
    overflow: hidden;
    transition: 0.5s ease-in-out;
