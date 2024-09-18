@@ -155,7 +155,7 @@ h1 {
     font-style: italic;
     text-align: left;
     color: var(--cor-primary);
-    text-shadow: 0 0 20px rgb(85, 84, 84);
+    text-shadow: 0 0 20px rgb(19, 18, 18);
 }
 .subtitulo h2{
     font-size: 1.6rem;
@@ -190,6 +190,7 @@ h1 {
     font-size: 18px;
     margin: 0;
 }
+
 
 /*fim sessao 1*/
 /*sessao 2*/
@@ -320,15 +321,18 @@ section.inicio3{
     height: 100%;
     padding: 70px 20px;
 }
-.sobre-mim .flex{
-    justify-content: space-between;
-}
+
 .sobre-mim img{
     float: right;
     width: 70px;
     height: 50px;
     margin: 0px 20px 0 10px;
-    
+}
+.container-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .container-2{
@@ -339,20 +343,29 @@ section.inicio3{
     border-radius: 10px;
     background-color: var(--cor-secundary);
     padding: 30px;
+    position: relative;
     
 }
-section.inicio3 h1 {
+.rede-sociais1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    backdrop-filter: blur(20px);
+    padding: 10px 5px;
+    border-radius: 5px;
+    right: 0;
+}
+.title h1 {
     text-align: center;
     padding: 10px 0 30px 0;
     font-weight: 500;
-    
 }
-
 
 .img-2 img{
     width: 200px;
-    border-radius: 10px; 
-    
+    height: 200px;
+    border-radius: 50%;
     box-shadow: 0px 0 5px white;
 }
 .img-2{
@@ -366,12 +379,14 @@ section.inicio3 h1 {
     font-size:18px;
     text-align: justify;
     font-weight: 300;
-    padding-right: 20px;
+    margin-bottom: 5px;
+    text-indent: 10px;
 }
 .sobre-mim h2{
     font-size: 30px;
     font-weight: 500;
 }
+
 .rede-sociais1 a i {
     text-align: left;
 }

@@ -9,6 +9,7 @@
     /*sessao 1*/
     section.inicio{
         height: 100%;
+        min-height: 100vh;
         position: relative;
         width: 100%;  
         display: flex;
@@ -28,8 +29,8 @@
     }
     
     .foto img {
-        width: 250px;
-        height: 330px;
+        width: 200px;
+        height: 300px;
         margin-bottom: 10px;
         animation: none;
         margin: 0 auto;
@@ -72,6 +73,7 @@
     }
     .img-2 img {
         width: 150px;
+        height: 150px;
         margin-bottom: 20px;
     }
     .inicio3 .flex{
@@ -82,10 +84,6 @@
     }
     .sobre-mim h2{
         font-size: 25px;
-    }
-    section.inicio3 h1 {
-       display: none;
-
     }
     
 }
@@ -99,8 +97,9 @@
 
 @media only screen and (max-width: 430px){
     .foto img {
-        width: 180px;
-        height: 280px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
         margin-top: 30px;
     }
     h1 {
@@ -131,5 +130,8 @@
     .projetos{
         height:570px;
     
+    }
+    section.inicio3 h1 {
+        font-size: 1.9rem;  
     }
 }
