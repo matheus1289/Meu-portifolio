@@ -96,8 +96,6 @@ main{
 /*sessao 1*/
 
 section.inicio{
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     max-height: 1000px;
     position: relative;
@@ -107,19 +105,14 @@ section.inicio{
     text-align: center;
     
 }
-.video{
+#particles-js{
+    height: 100%;
+    width: 100%;
+    background-color: black;
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
-    -webkit-appearance: none;
-    appearance: none;
-}
-.video::-webkit-media-controls{
-    display: none;
 }
 .foto {
     display: grid;
@@ -174,6 +167,7 @@ h1 {
     margin: 0;
     padding: 0;
     margin-left:40px ;
+    gap: 15px;
     
 }
 
@@ -189,6 +183,16 @@ h1 {
 .apresentacao p{
     font-size: 18px;
     margin: 0;
+}
+.rede-sociais1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 170px;
+    backdrop-filter: blur(20px);
+    padding: 10px 5px;
+    border-radius: 5px;
+    right: 0;
 }
 
 
@@ -321,7 +325,6 @@ section.inicio3{
     height: 100%;
     padding: 70px 20px;
 }
-
 .sobre-mim img{
     float: right;
     width: 70px;
@@ -329,15 +332,15 @@ section.inicio3{
     margin: 0px 20px 0 10px;
 }
 .container-sobre{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns:1fr 1fr;
     align-items: center;
     gap: 20px;
 }
 
 .container-2{
     width: 100%;
-    max-width: 950px;
+    max-width: 1100px;
     height: 100%;
     margin: 0 auto;
     border-radius: 10px;
@@ -346,29 +349,38 @@ section.inicio3{
     position: relative;
     
 }
-.rede-sociais1{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 100px;
-    backdrop-filter: blur(20px);
-    padding: 10px 5px;
-    border-radius: 5px;
-    right: 0;
+
+.title{
+    text-align: center;
+}
+.title p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cor-primary);
+    margin-bottom: 0px;
 }
 .title h1 {
     text-align: center;
-    padding: 10px 0 30px 0;
+    font-size: 2.5rem;
+    padding: 0px 0 30px 0;
     font-weight: 500;
+    color: white;
+    text-transform: uppercase;
 }
-
+.img-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .img-2 img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
     box-shadow: 0px 0 5px white;
+    border-radius: 8px;
 }
-.sobre-mim span{
+.container-2 span{
     color: var(--cor-primary);
 }
 .sobre-mim p {
@@ -376,11 +388,11 @@ section.inicio3{
     text-align: justify;
     font-weight: 300;
     margin-bottom: 5px;
-    text-indent: 10px;
 }
-.sobre-mim h2{
+.container-2 h2{
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .rede-sociais1 a i {

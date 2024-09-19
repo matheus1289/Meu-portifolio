@@ -71,11 +71,7 @@
     .sobre-mim .flex img{
         display: none;
     }
-    .img-2 img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 20px;
-    }
+
     .inicio3 .flex{
         flex-direction: column;
     }
@@ -93,13 +89,23 @@
         padding: 20px;
         
     }
+    .container-sobre{
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns:1fr;
+        
+    }
+    .img-2{
+        width: 100%;
+        
+    }
 }
 
 @media only screen and (max-width: 430px){
     .foto img {
         width: 200px;
         height: 250px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     h1 {
         font-size: 23px;
