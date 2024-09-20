@@ -108,7 +108,7 @@ section.inicio{
 #particles-js{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(3, 3, 3);;
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -199,7 +199,7 @@ h1 {
 /*fim sessao 1*/
 /*sessao 2*/
 section.inicio2{
-    background-image: url(../Imagens/fundo.avif);
+    background-image: url(../Imagens/fio-de-ouro.avif);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -235,7 +235,7 @@ section.inicio2{
     padding-bottom: 50px;
     margin-top: 70px;
     border-radius:  20px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     box-shadow: 0 0 15px #aaaaaa;
     cursor: pointer;
 }
