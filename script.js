@@ -25,14 +25,31 @@ sr.reveal('.foto', {
 sr.reveal('.habilidades', { 
     duration: 2000
 });
+sr.reveal('.habilidades h2', { 
+    duration: 2000,
+    origin:'left',
+    distance:'40px'
+});
+
 sr.reveal('.container-2', { 
     duration: 2000
 });
 sr.reveal('.img-2', { 
-    duration: 2000
-});
-sr.reveal('.sobre-mim', { 
     duration: 2000,
+    origin:'rigth',
+    distance:'50px'
+});
+sr.reveal('.sobre-mim h3', { 
+    duration: 2000,
+    origin:'left',
+    distance:'20px',
+    delay:500
+
+});
+sr.reveal('.info-sobre', { 
+    duration: 2000,
+    origin:'left',
+    distance:'20px',
     delay:1000
 
 });
@@ -41,24 +58,24 @@ sr.reveal('.container3', {
 });
 sr.reveal('.projetos:nth-child(1)', { 
     duration: 2000,
-    origin:'left',
+    origin:'bottom',
     distance:'50px'
 });
 sr.reveal('.projetos:nth-child(2)', { 
     duration: 2000,
-    origin:'left',
+    origin:'bottom',
     distance:'50px',
     delay:300
 });
 sr.reveal('.projetos:nth-child(3)', { 
     duration: 2000,
-    origin:'left',
+    origin:'bottom',
     distance:'50px',
     delay:600
 });
 sr.reveal('.projetos:nth-child(4)', { 
     duration: 2000,
-    origin:'left',
+    origin:'bottom',
     distance:'50px',
     delay:900
 });

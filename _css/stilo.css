@@ -90,7 +90,7 @@ main{
     margin: 0px;
 }
 /*Rolagem*/
-.foto, .habilidades, .container-2, .img-2, .sobre-mim, .container3, .projetos:nth-child(1), .projetos:nth-child(2), .projetos:nth-child(3), .projetos:nth-child(4), .titulo, .subtitulo, .carta{
+.foto, .habilidades, .container-2, .img-2, .sobre-mim h3, .container3, .projetos:nth-child(1), .projetos:nth-child(2), .projetos:nth-child(3), .projetos:nth-child(4), .titulo, .subtitulo, .carta, .info-sobre, .habilidades h2{
     visibility: hidden;
 }
 /*sessao 1*/
@@ -199,7 +199,7 @@ h1 {
 /*fim sessao 1*/
 /*sessao 2*/
 section.inicio2{
-    background-image: url(../Imagens/fio-de-ouro.avif);
+    background-image: url(../Imagens/vector-graphic-8052820_1280.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -207,10 +207,12 @@ section.inicio2{
     padding-bottom: 80px;
     width: 100%;  
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     
+}
+.img-habilidades img{
+    width: 50px;
 }
 .habilidades li img{
     width: 25px;
@@ -272,9 +274,7 @@ li div{
    
    
 }
-.clique{
-    background-color: var(--cor-secundary);
-}
+
 .barra > span{
     height: 30px;
     background: linear-gradient(to left, rgb(51, 228, 51) 0%, #fd1d1d 50%, #fcb045 100%);
@@ -366,6 +366,12 @@ section.inicio3{
     font-weight: 500;
     color: white;
     text-transform: uppercase;
+}
+.sobre-mim h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
 }
 .img-2{
     display: flex;
@@ -551,39 +557,44 @@ section.inicio4{
     border: none;
 
 }
-.mais{
+.mais-projetos{
+    width: 100%;
     display: flex;
-    width: 200px;
-    cursor: pointer;
-    position: relative;
-    margin-top: 30px;
-    border: 1px solid black;
-    font-size: 18px;
+    justify-content: end;
+    margin-top: 20px;
 }
-.mais a{
+.project-hover{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+.mais-projetos a{
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: 500;
+    position: relative;
+    transition: 0.5s;
 }
-.mais i{
-    position: absolute;
-    left:147px ;
-    top: 2px;
+
+.mais-projetos i{
+    font-size: 18px;
     transition: 0.5s;
     font-size: 18px;
+    transform: translate(-10PX, 2px);
+    
 }
-.mais:hover i {
-    left:152px;
-    color: var(--cor-primary)
-}
-.mais:hover a{
+.project-hover:hover i{
+    transform: translate(0px, 2px);
     color: var(--cor-primary);
 }
-.direita{
-    display: flex;
-    justify-content: end;
+.project-hover:hover a{
+    color: var(--cor-primary);
 }
+
 
 /* fim sessao 4*/
 
