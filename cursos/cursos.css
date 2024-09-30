@@ -1,13 +1,12 @@
 *{
-    color: white;
     font-family: "Roboto", sans-serif;   
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
     
 }
-p{
-    font-weight: 400;
-    font-style: italic;
-}
+
 
 /*variaveis*/
 :root{
@@ -24,6 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+    z-index: 99;
 }
 header button a{
     padding: 5px 10px;
@@ -50,6 +50,7 @@ ul button{
     transition: 0.5s;
     margin-top: 3px;
     border: 2px solid var(--cor-primary);
+    padding: 0px 10px;
 }
 ul:hover button{
     transform: scale(1.05);
@@ -63,17 +64,10 @@ ul:hover button{
     color: var(--cor-primary);
 }
 /*fim header*/
-
-section{
-    
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:100% ;
-    padding-top: 20px;
-    position: relative;
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
 }
 #particles-js{
     height: 100%;
@@ -83,250 +77,162 @@ section{
     object-fit: cover;
     top: 0;
     left: 0;
-    z-index:2 ;
+    z-index: -1;
 }
-
-h3 {
-    font-size: 1.4em;
-}
-h4 {
-    font-size: 1.2em;
-}
-.flex{
-    display: flex;
-     
-}
-.link {
-    text-decoration: none;
-    color:white;
-    transition: 0.5s;
-}
-
-
-.centro{
+section{
+    height:100% ;
+    width: 100vw;
     position: relative;
+    color: white;
+    padding: 0 20px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin:  0 auto;
-    width: 70%;
-    max-width: 600px;
-    min-width: 500px;
-    height: 100%;
-    margin-top: 50px;
-    box-shadow: 0 0 15px rgb(22, 22, 22);
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    z-index: 3;
     
+}
 
+.title{
+    z-index: 2;
 }
-.principal1{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    
-}
-.margin{
-    padding: 20px;
-}
-.principal1 h1{
-    font-size: 25px;
+.title h1{
+    font-size: 2rem;
+    z-index: 8;
+    text-align: center;
     font-weight: 500;
-    color:rgb(51, 228, 51) ;
+    color: white;
+    position: relative; 
 }
-.img-1 img{
-    width: 250px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 2px solid rgb(51, 228, 51);
-    box-shadow: 0 0 10px rgb(51, 228, 51);
+.title h1 span{
+    color: var(--cor-primary);
 }
-.img-1{
+.title h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 70%;
+    height: 4px;
+    background-color: var(--cor-primary);
+    border-radius: 5px;
+}
+.containers{
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+    z-index: 5;
 }
-.botao a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-.botao button{
-    background: rgb(51, 228, 51);
-    border: none;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin: 15px 0;
+/* div dos cursos */
+.cursos{
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.5s;
-    border: 2px solid var(--cor-primary);
+    z-index: 3;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
-.botao i{
-    font-size: 18px;
-    color: white;
-
+.cursos img{
+    width: 100%;
+    height: 180px; 
+    transition: 0.8s;
+    border-radius: 8px;
 }
-.botao button:hover{
-    background-color: transparent;
+.cursos img:hover{
+    transform: scale(1.1);
+}
+.informacao{
+    z-index: 10;
+}
+.informacao h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.informacao p {
+    text-align: justify;
+    font-weight: 100;
+    font-style: italic;
 }
 .botao{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    
+    
 }
-.descricao h2{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(51, 228, 51);;
+.botao button{
+    background-color: var(--cor-primary);
+    border: 2px solid var(--cor-primary);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 300px;
+    padding: 5px 0; 
+    align-self: flex-end;
+    transition: .5s;
+    
 }
-.descricao p{
-    text-align: justify;
+.botao button:hover{
+    background-color: transparent;
 }
 
-
-.flex{
-    display: flex;
-  
-}
-.listas ul li{
-    list-style-type: disc;
-    font-weight: 400;
-    font-style: italic;
-}
-/*footer*/
-.principal {
-    margin: 0px 10px;
+/* rodape */
+.rodape{
+    height: 150px;  
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 .icons{
     padding: 5px;
     font-size: 30px;
-    color:rgb(51, 228, 51);
+    color:var(--cor-primary);
     
 }
 
-.principal .flex{
+.rodape .flex{
     justify-content: center;
-    text-align: center;
-    
+    text-align: left;
+    margin: 10px;
 }
 .line-footer p i{
     font-size: 30px;
-    color:rgb(51, 228, 51); 
+    color:var(--cor-primary);
 }
 
 .line-footer p a{
     text-decoration: none;
     color: white;
-    font-size: 15px;
-    
+    font-size: 15px; 
+    font-weight: 400;
+    font-style: italic;
 }
 .line-footer p{
     padding-left: 10px;
 }
-
 .borda{
-    border-top:2px solid rgb(51, 228, 51);
-}
-.line-footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    border-top:2px solid var(--cor-primary);
+    width: 100%;
 }
 
-/* Responsividade */
-@media (min-width: 530px){
-    .centro{
-        box-sizing: border-box;
-
+@media screen and (max-width:1500px){
+    .containers{
+        max-width: 800px; 
     }
-    html, body{
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        
-        
-    }
-    .principal1{
-        box-sizing: border-box;
-        height: 100vh;
-
-          
-    }
-    .principal1::-webkit-scrollbar{
-        display: none;
 }
-}
-
-@media (min-width: 411px) and (max-width: 529px){
-    .centro{
-        min-height: 100%;
-        width: 100%;
-        min-width: 100px;
-        border-radius: 0;
-        backdrop-filter: blur(0px);
-        
-        
-    }
-    html, body{
-        height: 100%;
-        background-repeat: no-repeat;
-        
-    }
-    .principal1{
-        width: 100%;
-        min-height: 100%;
-        background-color: transparent;
-        border-radius: 0;  
-    }
-    header{
-        box-shadow: none;
-    }
-
-
-}
-
-@media  (max-width: 410px){
-    .centro{
-        width: 100%;
-        min-height: 100%;
-        min-width: 100px;
-        border-radius: 0;
-        backdrop-filter: blur(0px);
-    }
-    hyml, body{
-        height: 100%;
-        background-repeat: no-repeat;
-        
-    }
-    .principal1{
-        width: 100%;
-        min-height: 100%;
-        background-color: transparent;
-        border-radius: 0px; 
-          
-    }
-    .centro h1, h2{
-        font-size: 20px;
-    }
-    .centro .img-1 img{
-        width: 150px;
-        margin-bottom: 20px;
-        
-        
-    }
-    .botao{
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
-    }  
-    footer {
-        margin: 0;
-        padding: 0;
-           
-    }
- 
-}
-

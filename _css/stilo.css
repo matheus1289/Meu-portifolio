@@ -90,7 +90,7 @@ main{
     margin: 0px;
 }
 /*Rolagem*/
-.foto, .habilidades, .container-2, .img-2, .sobre-mim h3, .container3, .projetos:nth-child(1), .projetos:nth-child(2), .projetos:nth-child(3), .projetos:nth-child(4), .titulo, .subtitulo, .carta, .info-sobre, .habilidades h2{
+.foto, .container-2, .img-2, .sobre-mim h3, .container3, .titulo, .subtitulo, .carta, .info-sobre{
     visibility: hidden;
 }
 /*sessao 1*/
