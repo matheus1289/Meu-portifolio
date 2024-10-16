@@ -633,7 +633,7 @@ section.inicio4{
     
 }
 .formulario{
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     margin-top: 50px;
     padding: 40px 20px;
     display: flex;
@@ -679,6 +679,7 @@ textarea::placeholder, input::placeholder{
     border: none;
     border: 2px solid white;
     padding: 0 5px;
+    min-height: 100px;
 }
 .botao-contato{
     border: 2px solid var(--cor-primary);
