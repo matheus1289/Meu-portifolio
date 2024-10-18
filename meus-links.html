@@ -6,6 +6,7 @@
     <title>Card-links</title>
     <!-- CSS -->
     <link rel="stylesheet" href="_css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- LINK FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +14,27 @@
     <!-- font icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/icons8-links-64.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="particles-js"></div>
-    <section class="container"> 
+    <section class="container" data-aos="zoom-in" data-aos-duration="1500" > 
         <div class="topo">
             <img src="Imagens/fotos-projetos/img/matheus.jpeg" alt="Foto">
-            <h2>Matheus santos</h2>
+            <h2 data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1600">Matheus santos</h2>
         </div>
         <div class="links-container">   
-            <a class="links" href="https://www.instagram.com/theus_santtos2/" target="_blank">Instagran <i class="fa-brands fa-square-instagram"></i></a>
-            <a class="links" href="https://mjdesenvolvedor.com.br/" target="_blank">Portfólio <i class="fa-solid fa-address-book"></i></a>
-            <a class="links" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank">Linkdin <i class="fa-brands fa-linkedin"></i></a>
-            <a class="links" href="https://github.com/matheus1289" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
-            <a class="links" href="https://matheus2-dev.netlify.app/pdf/curr%C3%ADculo-atualizado.pdf" target="_blank">Currículo <i class="fa-solid fa-file-pdf"></i></a>
+            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="links" href="https://www.instagram.com/theus_santtos2/" target="_blank">Instagran <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="links" href="https://mjdesenvolvedor.com.br/" target="_blank">Portfólio <i class="fa-solid fa-address-book"></i></a>
+            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" class="links" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank">Linkdin <i class="fa-brands fa-linkedin"></i></a>
+            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="900" class="links" href="https://github.com/matheus1289" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000" class="links" href="https://matheus2-dev.netlify.app/pdf/curr%C3%ADculo-atualizado.pdf" target="_blank">Currículo <i class="fa-solid fa-file-pdf"></i></a>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="../js/particles.js"></script>
     <script type="text/javascript" src="../js/app.js"></script>
 </body>
