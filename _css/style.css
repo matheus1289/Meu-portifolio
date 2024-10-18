@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 3, 3);;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container{
+    backdrop-filter: blur(25px);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 92%;
+    max-width: 400px;
+    z-index: 99;
+    box-shadow: 0 0 15px rgb(53, 53, 53);
+    
+}
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.topo h2{
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.6rem;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.links{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.8);
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    transition: 0.5s;
+}
+.links::after{
+    content: '';
+    position: absolute;
+    bottom:-2%;
+    height: 2%;
+    width: 100%;
+    right: 0;
+    background-color: rgb(202, 197, 197);
+    background: blur(5px);
+    box-shadow: 0 0 20px rgb(12, 1, 1);
+    filter: blur(4px);
+    z-index: -1;
+    transition: 0.5s;
+}
+.links:hover{
+    background-color: black;
+}
+
+.links i{
+    color: rgb(88, 202, 206);
+}
+
+.topo img{
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(88, 202, 206);
+}
+
+@media (max-width:430px){
+    .links-container{
+        gap: 25px;
+
+    }
+}
