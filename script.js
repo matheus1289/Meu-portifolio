@@ -26,11 +26,7 @@ sr.reveal('.foto', {
 sr.reveal('.container-2', { 
     duration: 2000
 });
-sr.reveal('.img-2', { 
-    duration: 2000,
-    origin:'rigth',
-    distance:'50px'
-});
+
 sr.reveal('.sobre-mim h3', { 
     duration: 2000,
     origin:'left',

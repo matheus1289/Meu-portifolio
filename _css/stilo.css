@@ -92,7 +92,7 @@ main{
     margin: 0px;
 }
 /*Rolagem*/
-.foto, .container-2, .img-2, .sobre-mim h3, .container3, .titulo, .subtitulo, .carta, .info-sobre{
+.foto, .container-2, .sobre-mim h3, .container3, .titulo, .subtitulo, .carta, .info-sobre{
     visibility: hidden;
 }
 /*sessao 1*/
