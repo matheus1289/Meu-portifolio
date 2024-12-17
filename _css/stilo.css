@@ -128,7 +128,7 @@ section.inicio{
 
 .foto img {
     position: relative;
-    width: 250px;
+    width: 350px;
     height: 400px;
     margin-bottom: 10px;
     border-radius: 50px 20px 50px 20px;
@@ -229,27 +229,12 @@ section.inicio2::before{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9); /* Altere a opacidade para ajustar a escuridão */
 }
-.img-habilidades img{
-    width: 50px;
-}
-.habilidades li img{
-    width: 25px;
-}
-.habilidades ul{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
-}
-.habilidades li{
-    margin:20px 0;
-}
-.habilidades h3{
-    font-size: 18px;
-    font-weight: 500;
-}
+
+
+
 .habilidades{
     width: 80%;
-    max-width: 600px;
+    max-width: 750px;
     padding: 10px 25px;
     height: 100%;
     padding-bottom: 50px;
@@ -257,83 +242,48 @@ section.inicio2::before{
     border-radius:  20px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 15px #aaaaaa;
+}
+
+.skils h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.skils{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.icons img{
+    width: 50px;
+}
+
+.skils .icons{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     cursor: pointer;
+    box-shadow: 0 0 6px white;
+    border-radius: 8px;
+    transition: 0.5s;
 }
-.marque{
-    width: 60%;
-    border-radius: 5px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px white;
+.skils .icons:hover{
+    transform: scale(1.1);
 }
-
-
-
 .habilidades h2{
     text-align: center;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 50px 0;
     color:var(--cor-primary);
     font-size: 35px;
     font-weight: 700;
     
 }
-li div{
-    justify-content: space-between;
-}
-.habilidades .barra{
-   background-color: rgb(214, 214, 214);
-   backdrop-filter: blur(30px);
-   border: 1px solid black;
-   display: block;
-   height: 20px;
-   position: relative;
-   overflow: hidden;
-   transition: 0.5s ease-in-out;
-   border-radius: 10px;
-   
-   
-}
 
-.barra > span{
-    height: 30px;
-    background: linear-gradient(to left, rgb(51, 228, 51) 0%, #fd1d1d 50%, #fcb045 100%);
-    position: absolute;
-}
-.html, .css{
-    width: 70%;
-    animation: html 5s;
-}
-.javascript, .python{
-    width: 55%;
-    animation: css 5s;
-}
-.php{
-    width:40% ;
-    animation: javascript 5s;
-}
-@keyframes html{
-    0%{
-        width: 0;
-    }
-    100%{
-       width: 70%; 
-    }
-}
-@keyframes css{
-    0%{
-        width: 0;
-    }
-    100%{
-       width: 55%; 
-    }
-}
-@keyframes javascript{
-    0%{
-        width: 0;
-    }
-    100%{
-       width: 40%; 
-    }
-}
 /*fim sessao 2*/
 /*sessao 3*/
 section.inicio3{
