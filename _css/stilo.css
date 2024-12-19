@@ -268,12 +268,14 @@ section.inicio2::before{
     justify-content: center;
     gap: 10px;
     cursor: pointer;
-    box-shadow: 0 0 6px white;
     border-radius: 8px;
     transition: 0.5s;
+    box-shadow: 0 0 6px white;    
+    background-color: #1f1e1e;
 }
 .skils .icons:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 10px white;
 }
 .habilidades h2{
     text-align: center;
