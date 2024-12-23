@@ -52,6 +52,12 @@ body{
     font-style: italic;
     font-size: 1.6rem;
 }
+.topo img{
+    transition: .5s;
+}
+.topo img:hover{
+    transform: scale(1.1);
+}
 .links-container{
     width: 100%;
     display: flex;
