@@ -52,15 +52,20 @@ button.ativar .linha:nth-child(3){
 header .container-nav{
     position: fixed;
     width: 100%;
-    padding: 50px 0;
     z-index: 5;
     background-color: transparent;
     transition: 0.8s;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+
 }
 .container-nav.rolagem{
     backdrop-filter: blur(30px);
-    padding: 20px 0;
     padding-bottom: 5px;
+    height: 100px;
 }
 
 
@@ -140,6 +145,9 @@ li{
 .texto a{
     text-decoration: none;
 }
+.texto img{
+    width: 100px;
+}
 .texto p span{
     color: var(--cor-primary);
 }
@@ -179,6 +187,7 @@ header .flex{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     gap: 1.2rem;
     width: 50%;
     list-style: none;
@@ -186,9 +195,8 @@ header .flex{
     margin: 0 auto;
 }
 
-.nav-links-mobile h2{
-    font-size: 1.9rem;
-    margin-bottom: -5px;
+.mobile-menu img{
+    width: 150px;
 }
 .nav-links-mobile h2 span{
     color: var(--cor-primary);
