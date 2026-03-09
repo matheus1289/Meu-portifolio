@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Web: dedicado à criação de soluções web inovadoras, focadas em alto desempenho e design moderno. Sempre em busca de aprimorar minhas habilidades e adotar novas tecnologias, meu objetivo é entregar experiências digitais personalizadas e funcionais, que elevam a presença online dos meus clientes.">
+    <meta name="description"
+        content="Desenvolvedor Web: dedicado à criação de soluções web inovadoras, focadas em alto desempenho e design moderno. Sempre em busca de aprimorar minhas habilidades e adotar novas tecnologias, meu objetivo é entregar experiências digitais personalizadas e funcionais, que elevam a presença online dos meus clientes.">
     <meta name="author" content="Matheus Santos">
-    <meta name="keywords" content="mj desenvolvedor, programador, desenvolvedor web, html, css, javascript, python, front-end Matheus, Matheus santos dev, Matheus jose dos santos">
+    <meta name="keywords"
+        content="mj desenvolvedor, programador, desenvolvedor web, html, css, javascript, python, front-end Matheus, Matheus santos dev, Matheus jose dos santos">
     <meta name="robots" content="index,follow">
 
     <title>MJ desenvolvedor | Matheus</title>
@@ -17,8 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- link css -->
-    <link rel="stylesheet" href="_css/stilo.css">
-    <link rel="stylesheet" href="_css/navegacao.css">
+    <link rel="stylesheet" href="_css/todos-css/global.css">
     <link rel="stylesheet" href="_css/mobile.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link script -->
@@ -33,6 +34,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <!-- link do icone da pagina -->
     <link rel="icon" href="Imagens/icons/programacao.png" type="image/png">
 </head>
@@ -40,7 +49,7 @@
 <body>
     <header>
         <div id="header" class="container-nav">
-        
+
             <div class="texto">
                 <a href="index.html">
                     <img src="Imagens/logoms.png" alt="logo">
@@ -52,18 +61,19 @@
                     <li class="diferenca "><a href="#sobre">Sobre</a></li>
                     <li class="diferenca "><a href="#habilidades">Habilidades</a></li>
                     <li class="diferenca "><a href="#projetos">Projetos</a></li>
-                    <a  href="cursos/index.html"><button class="botao-nav">Cursos</button></a>
+                    <a href="cursos/index.html"><button class="botao-nav">Cursos</button></a>
                 </ul>
 
                 <div class="mobile-menu" id="mobileMenu">
                     <img src="Imagens/logoms.png" alt="logo">
                     <ul class="nav-links-mobile" id="menu-item">
-                       
-                        <li><a href="#" >Inicio</a></li>
+
+                        <li><a href="#">Inicio</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Projetos</a></li>
-                        <a class="nav-link-button" href="cursos/index.html"><button class="botao-nav">Cursos</button></a>
+                        <a class="nav-link-button" href="cursos/index.html"><button
+                                class="botao-nav">Cursos</button></a>
                     </ul>
                 </div>
                 <button class="hamberger" id="hambergeButton" onclick="this.classList.toggle('ativar')">
@@ -72,314 +82,551 @@
                     <span class="linha"></span>
                 </button>
             </nav>
-        
+
 
         </div>
 
     </header>
     <main>
         <!-- section da pagina inicial -->
-        <section id="# " class="inicio">
+        <section id="inicio" class="hero">
+            <!-- NETWORK CANVAS -->
             <div id="particles-js"></div>
-            <div class="apresentacao">
-                <div class="titulo">
-                    <h1>Transformando desafios em soluçoes criativas<span>.</span></h1>
-                </div>
-                <div class="subtitulo">
-                    <h2>Desenvolvedor Web<span>.</span></h2>
-                    <p>Apaixonado por criar soluções funcionais com foco em desempenho e design moderno. Busco sempre aprender e aplicar novas tecnologias.</p>
-                    
-                </div>
-                <div class="carta">
-                    <a class="link-a" href="pdf/currículoAtualizado.pdf" target="_blank"><button class="btn-tds">Currículo <i class="fa-regular fa-circle-down"></i></button></a>
 
-                    <a class="link-a contato-botao" href="#contato"><button class="btn-tds">Contato<i class="fa-solid fa-address-card"></i></button></a>
+            <!-- LEFT -->
+            <div class="hero-left">
 
+                <h1 class="hero-headline">
+                    Transformando desafios<br>em soluções criativas<span class="dot">.</span>
+                </h1>
+
+                <p class="hero-sub-title">Desenvolvedor Web<span class="dot">.</span></p>
+
+                <div class="hero-divider"></div>
+
+                <p class="hero-desc">
+                    Apaixonado por criar soluções funcionais com foco em desempenho e design moderno. Busco sempre
+                    aprender e aplicar novas tecnologias.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="pdf/currículoAtualizado.pdf" target="_blank" class="btn-primary">
+                        Currículo
+                        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8v4l3 3" />
+                        </svg>
+                    </a>
+                    <a href="#contato" class="btn-secondary">
+                        Contato
+                        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hero-badges">
+                    <span class="badge"><span class="badge-dot"></span>HTML · CSS</span>
+                    <span class="badge"><span class="badge-dot"></span>Javascript</span>
+                    <span class="badge"><span class="badge-dot"></span>Git & Github</span>
+                    <span class="badge"><span class="badge-dot"></span>Figma</span>
                 </div>
             </div>
-            <div class="foto" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
-                 <img src="https://cdn.pixabay.com/photo/2024/04/09/03/04/ai-generated-8684869_1280.jpg" alt="Matheus santos">
+
+            <!-- RIGHT -->
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="img-glow"></div>
+
+                    <!-- floating pills -->
+                    <div class="float-pill pill-1">
+                        <span class="dot" style="background:#4ade80; box-shadow:0 0 6px #4ade80"></span>
+                        Disponível p/ projetos
+                    </div>
+                    <div class="float-pill pill-2">
+                        <span class="dot" style="background:#facc15; box-shadow:0 0 6px #facc15"></span>
+                        6 certificados
+                    </div>
+                    <div class="float-pill pill-3">
+                        <span class="dot"
+                            style="background:var(--blue-bright); box-shadow:0 0 6px var(--blue-bright)"></span>
+                        UI / UX · Dev
+                    </div>
+
+                    <!-- placeholder image — replace src with your actual image -->
+                    <img class="hero-img"
+                        src="https://cdn.pixabay.com/photo/2024/04/09/03/04/ai-generated-8684869_1280.jpg"
+                        alt="Matheus Santos" onerror="this.style.background='#0c0e1a';this.removeAttribute('src')" />
+                </div>
             </div>
-            <div class="rede-sociais1">
-                <a href="https://www.instagram.com/theus_santtos2/" target="_blank"><i
-                        class="icons bi bi-instagram "></i></a>
-                <a href="https://github.com/matheus1289" target="_blank"><i
-                        class="icons bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"><i
-                        class=" icons bi bi-linkedin"></i></a>
+
+            <!-- SCROLL HINT -->
+            <div class="scroll-hint">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                Scroll
             </div>
+
         </section>
         <!--Fim section da pagina inicial -->
         <!-- section sobre mim -->
-        <section id="sobre" class="inicio3">
-            <div class="container-2">
-                <div class="title">
-                    <p>Conheça um pouco </p>
-                    <h2>Sobre mim</h2>
-                </div>
-                
-                <div class="container-sobre">
-                    <div class="sobre-mim">
-                        <h3>Olá, me chamo <span>Matheus santos</span>.</h3>
-                        <div class="info-sobre">
-                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/ffffff/quote-left.png" alt="quote-left"/>
-                            <p>Olá, meu nome é Matheus e sou formado em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web. Sou uma pessoa dedicada, esforçada e comprometida com a evolução profissional. Tenho grande interesse em tecnologia e estou sempre buscando aprimorar meus conhecimentos em programação, desenvolvimento de software e boas práticas de código. Gosto de enfrentar desafios, propor soluções eficientes e colaborar em projetos que agreguem valor ao time e ao produto. Meu objetivo é atuar na área de tecnologia, contribuindo com minhas habilidades técnicas e meu entusiasmo, enquanto continuo evoluindo como desenvolvedor.</p>
+        <section id="sobre" class="sobre">
+            <!-- sobre section rewritten as per provided template -->
+            <div class="sobre-header">
+                <div class="sobre-eyebrow">Conheça um pouco</div>
+                <h2 class="sobre-titulo">Sobre <span>Mim</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="foto-col">
+                    <div class="foto-wrap">
+                        <div class="foto-frame-deco"></div>
+                        <div class="foto-container">
+                            <div class="corner corner-tl"></div>
+                            <div class="corner corner-tr"></div>
+                            <div class="corner corner-bl"></div>
+                            <div class="corner corner-br"></div>
+                            <img src="Imagens/foto2.webp" alt="Matheus Santos"
+                                onerror="this.style.display='none'; this.parentElement.style.background='#111c2e'; this.parentElement.innerHTML += '<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:80px;padding-top:40px;\'>👨‍💻</div>'">
+                        </div>
+                        <div class="foto-badge">
+                            <span>Desenvolvedor</span>
+                            Web
                         </div>
                     </div>
-                    <div class="img-2" data-aos="flip-left" data-aos-duration="1200">
-                        <img src="Imagens/foto2.webp" alt="foto-sobre">
+                </div>
+
+                <div class="texto-col">
+                    <h3 class="saudacao">
+                        Olá, me chamo<br>
+                        <span class="nome">Matheus Santos.</span>
+                    </h3>
+
+                    <p class="bio">
+                        Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> com foco em
+                        desenvolvimento web. Sou uma pessoa dedicada, esforçada e comprometida com a evolução
+                        profissional.
+                        <br>
+                        Tenho grande interesse em tecnologia e estou sempre buscando aprimorar meus conhecimentos em
+                        <strong>programação e desenvolvimento de software</strong>. Gosto de enfrentar desafios, propor
+                        soluções eficientes e colaborar em projetos que agreguem valor ao time e ao produto.
+                        <br>
+                        Meu objetivo é atuar na área de tecnologia, contribuindo com minhas habilidades técnicas e
+                        entusiasmo, enquanto continuo evoluindo como desenvolvedor.
+                    </p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="ic-icon">🎓</div>
+                            <div class="ic-label">Formação</div>
+                            <div class="ic-val">ADS — Análise e Dev. de Sistemas</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="ic-icon">📍</div>
+                            <div class="ic-label">Localização</div>
+                            <div class="ic-val">Brasil 🇧🇷</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="ic-icon">💼</div>
+                            <div class="ic-label">Foco</div>
+                            <div class="ic-val">Desenvolvimento Web</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="ic-icon">🚀</div>
+                            <div class="ic-label">Status</div>
+                            <div class="ic-val" style="color:var(--blue-light)">Disponível ●</div>
+                        </div>
+                    </div>
+
+                    <div class="acoes">
+                        <a href="pdf/curriculoAtualizado.pdf" class="btn-primary">Baixar Currículo →</a>
+                        <a href="#contato" class="btn-outline">Fale comigo</a>
                     </div>
                 </div>
- 
             </div>
-  
+
         </section>
         <!--Fim section da pagina sobre mim -->
         <!-- section habilidades -->
-        <section id="habilidades" class="inicio2">
-            <div class="habilidades" data-aos="flip-left" data-aos-duration="1000">
-                
-                <h2 class="animation" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500" >Minhas <span>Habilidades.</span></h2>
-                <div class="skils">
-                    <div class="icons">
-                        <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                        <h3>CSS</h3>
+        <section id="habilidades" class="skill-section">
+            <div class="skill-container">
+                <!-- Header da seção -->
+                <div class="skill-header">
+                    <div class="skill-eyebrow">HABILIDADES</div>
+                    <h2 class="skill-title">Stack & Ferramentas</h2>
+                    <p class="skill-description">Tecnologias que uso no dia a dia para construir produtos completos e
+                        escaláveis.</p>
+                </div>
+
+                <!-- Grid de Cards -->
+                <div class="skill-grid">
+                    <!-- Card 1: Front-end -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="skill-card-icon">🎨</div>
+                        <h3 class="skill-card-title">Front-end</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">SASS</span>
+                        </div>
                     </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/icons8-bootstrap-48.png" alt="bootstrap">
-                        <h3>BOOTSTRAP</h3>
+
+                    <!-- Card 2: Back-end & Dados -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="skill-card-icon">⚙️</div>
+                        <h3 class="skill-card-title">Back-end & Dados</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">REST APIs</span>
+                    
+                        </div>
                     </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/icons8-javascript-48.png" alt="JAVASCRIPT">
-                        <h3>JAVASCRIPT</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/icons8-mysql-48.png" alt="MYSQL">
-                        <h3>MYSQL</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/icons8-python-48.png" alt="PYTHON">
-                        <h3>PYTHON</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/sass.png" alt="SASS">
-                        <h3>SASS</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/git.png" alt="GIT">
-                        <h3>GIT</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/github (1).png" alt="GITHUB">
-                        <h3>GIT HUB</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/vscode.png" alt="vscode">
-                        <h3>VSCODE</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/REACT.png" alt="vscode">
-                        <h3>REACT</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="Imagens/icons/node-js.png" alt="vscode">
-                        <h3>NODE JS</h3>
+
+                    <!-- Card 3: Ferramentas -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="skill-card-icon">🔧</div>
+                        <h3 class="skill-card-title">Ferramentas</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Figma</span>
+                            <span class="skill-badge">Netlify</span>
+                            <span class="skill-badge">npm</span>
+                        </div>
                     </div>
                 </div>
-                <!-- <ul>
-                    <li>
-                        <div class="flex">
-                            <h3>HTML <img src="Imagens/icons/icons8-html5-48.png" alt=""></h3>
-                            <p>70%</p>
-                        </div>
-
-                        <span class="barra"><span class="html"></span></span>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <h3>CSS <img src="Imagens/icons/icons8-css-48.png" alt=""></h3>
-                            <p>70%</p>
-                        </div>
-                        <span class="barra"><span class="css"></span></span>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <h3>JAVASCRIPT <img src="Imagens/icons/icons8-javascript-48.png" alt=""></h3>
-                            <p>55%</p>
-                        </div>
-
-                        <span class="barra"><span class="javascript"></span></span>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <h3>PYTHON <img src="Imagens/icons/icons8-python-48.png" alt=""></h3>
-                            <p>55%</p>
-                        </div>
-
-                        <span class="barra"><span class="python"></span></span>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <h3>PHP <img src="Imagens/icons/icons8-php-48.png" alt=""></h3>
-                            <p>40%</p>
-                        </div>
-
-                        <span class="barra"><span class="php"></span></span>
-                    </li>
-                </ul>
-                <div class="marque">
-                    <marquee >
-                        <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                        <img src="Imagens/icons/icons8-html5-48.png" alt="html">
-                        <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
-                        <img src="Imagens/icons/icons8-php-48.png" alt="php">
-                        <img src="Imagens/icons/icons8-python-48.png" alt="python">
-                        <img src="Imagens/icons/icons8-bootstrap-48.png" alt="bootstrap">
-                        <img src="Imagens/icons/icons8-mysql-48.png" alt="MYsql">
-                    </marquee>
-                </div> -->
             </div>
-
         </section>
         <!--Fim section da pagina habilidades -->
-        <!-- section de projetos -->
-        <section id="projetos" class="inicio4">
-            <div class="container3">
-                <h2 data-aos="zoom-in-up" data-aos-duration="1000" >Projetos</h2>
-                <div class="flex-proj">
-                    <!-- projeto 1 -->
-                    <div class="projetos hover" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="proj">
-                            <div class="icons-linguagem">
-                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
-                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
-                            </div>
-                        </div>
-                        <h3>Lista de tarefas</h3>
-                        <p>Projeto desenvolvido utilizando HTML, CSS e JavaScript, com a finalidade de criar uma lista de tarefas. O projeto permite que você adicione, edite, exclua e marque tarefas como concluídas. Além disso, mesmo após atualizar a página, as tarefas permanecem salvas, pois são armazenadas no armazenamento local do navegador (localStorage). </p>
-                        <div class="botao">
-                            <a  href="https://list-tarefasmj.netlify.app" target="_blank"><button class="hov"><i
-                                class="bi bi-globe-americas"></i> Projeto</button></a>
-                            <a  href="https://github.com/matheus1289/Lista-tarefas" target="_blank"><button class="hov"><i
-                                class="icons bi bi-github"></i>Repositório</button></a>
-                        </div>
-                    </div>
-                    <!-- fim projeto 1 -->
-                    <!-- projeto 2 -->
-                    <div class="projetos hover" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-                        <div class="proj2">
-                            <div class="icons-linguagem">
-                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
-                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                                <img src="Imagens/icons/icons8-javascript-48.png" alt="js">
-                            </div>
-                        </div>
-                        <h3>Freelance</h3>
-                        <p>Este site foi criado para destacar o trabalho da minha cliente e conta com 4 sessões principais: Início, Sobre, Avaliações e Serviços, com links integrados para redes sociais e WhatsApp. O projeto é totalmente responsivo. Também utilizei técnicas de SEO para melhorar o posicionamento nas buscas, oferecendo mais visibilidade ao cliente. </p>
-                        <div class="botao">
-                            <a  href="https://carlarevendedora.com.br/" target="_blank"><button class="hov"><i
-                                class="bi bi-globe-americas"></i> Projeto</button></a>
-                            <a  href="https://github.com/matheus1289/freelance-carla-soares" target="_blank"><button class="hov"><i
-                                class="icons bi bi-github"></i>Repositório</button></a>
-                        </div>
-                    </div>
-                    <!-- fim projeto 2 -->
-                    <!-- projeto 3 -->
-                    <div class="projetos hover" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900">
-                        <div class="proj3">
-                            <div class="icons-linguagem">
-                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
-                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
-                            </div>
-                        </div>
-                        <h3>Previsão do tempo</h3>
-                        <p>Este projeto utiliza a API gratuita da OpenWeather para fornecer informações climáticas detalhadas. Desenvolvido com JavaScript, CSS e HTML, a aplicação permite que os usuários consultem a previsão do tempo de maneira simples e intuitiva, para obter dados climáticos, como temperatura, umidade e condições gerais do tempo  (ensolarado, nublado, chuva, etc.).</p>
-                        <div class="botao">
-                            <a  href="https://openfreedev-tempo.netlify.app/" target="_blank"><button class="hov"><i
-                                class="bi bi-globe-americas"></i> Projeto</button></a>
-                            <a  href="https://github.com/matheus1289/previsao-tempo" target="_blank"><button class="hov"><i
-                                class="icons bi bi-github"></i>Repositório</button></a>
-                        </div>
-                    </div>
-                    <!--fim projeto 3 -->
-                    <!-- projeto 4 -->
-                    <div class="projetos hover" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1100">
-                        <div class="proj4">
-                            <div class="icons-linguagem">
-                                <img src="Imagens/icons/icons8-html5-48.png" alt="hmtl">
-                                <img src="Imagens/icons/icons8-css-48.png" alt="css">
-                                <img src="Imagens/icons/icons8-javascript-48.png" alt="javascript">
-                            </div>
-                        </div>
-                        <h3>Starbucks</h3>
-                        <p>Desenvolvi um site responsivo inspirado no Starbucks, onde os usuários podem alterar os drinks ao selecioná-los. O design do site é ajustável e se adapta perfeitamente a qualquer dispositivo, seja um computador ou um aparelho móvel. Utilizei HTML, CSS e JavaScript para implementar todas as funcionalidades e garantir uma experiência de usuário fluida e intuitiva.</p>
-                        <div class="botao">
-                            <a  href="https://openfreedev-coffe.netlify.app/" target="_blank"><button class="hov"><i
-                                class="bi bi-globe-americas"></i> Projeto</button></a>
-                            <a  href="https://github.com/matheus1289/starbucks" target="_blank"><button class="hov"><i
-                                class="icons bi bi-github"></i>Repositório</button></a>
-                        </div>
-                    </div>
+        <!-- section de projetos (atualizado: layout moderno e responsivo) -->
+        <section id="projetos" class="projects-section">
+            <div class="projects-inner">
+                <header class="projects-header">
+                    <h2>🚀 Meus Projetos</h2>
+                    <span></span>
+                    <p class="projects-sub">Alguns trabalhos que já desenvolvi</p>
+                </header>
 
-                    <!--fim projeto 4 -->
-        
-                 
-            </div>
-            <div class="mais-projetos">
-                <div class="project-hover">
-                    <a href="https://github.com/matheus1289?tab=repositories" target="_blank">Ver mais projetos</a>
-                    <i class="bi bi-arrow-right-circle-fill"></i>
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/starbucks.png" alt="Clone Starbucks">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Clone Starbucks</h3>
+                            <p class="project-desc">Site responsivo com troca dinâmica de bebidas e layout moderno.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://openfreedev-coffe.netlify.app/" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/starbucks"
+                                    target="_blank"><img src="Imagens/icons/github (1).png" alt="github">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/imc.png" alt="Calculadora de IMC">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Calculadora de IMC</h3>
+                            <p class="project-desc">Calculadora simples de índice de massa corporal com UI acessível.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://calculadora-imc-mjs.netlify.app/" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/calculadora-imc"
+                                    target="_blank"><img src="Imagens/icons/github (1).png" alt="github">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/barber.png" alt="Landing Page Barber">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Landing Page Barber</h3>
+                            <p class="project-desc">Landing page moderna voltada para mostrar os serviços de um salão de
+                                cabeleireiro.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://barbearia5.netlify.app/" target="_blank">Ver Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/barbearia"
+                                    target="_blank"><img src="Imagens/icons/github (1).png" alt="github">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/car-info.png" alt="car-info">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Informações de Carros</h3>
+                            <p class="project-desc">Aplicação que exibe informações detalhadas de carros de forma rápida
+                                e organizada.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://car-info2.netlify.app/" target="_blank">Ver Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/car-project" target="_blank">
+                                    <img src="Imagens/icons/github (1).png" alt="">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/nike.png" alt="Weather App">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Clone Nike</h3>
+                            <p class="project-desc">Clone da página inicial da Nike com design moderno e responsivo.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://openfreedev.netlify.app/" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/clone-nike2.0"
+                                    target="_blank"><img src="Imagens/icons/github (1).png" alt="">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/temp.png" alt="previsão do tempo">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Previsão do Tempo</h3>
+                            <p class="project-desc">Aplicativo de previsão do tempo usando API pública.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://github.com/matheus1289/previsao-tempo" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://openfreedev-tempo.netlify.app/" target="_blank"><img
+                                        src="Imagens/icons/github (1).png" alt=""> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                
+                <div class="ver-mais">
+                    <!-- Card 10 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/lista-tarefas.png.png" alt="car-info">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Lista de Tarefas</h3>
+                            <p class="project-desc">Aplicação para gerenciar tarefas diárias de forma simples e
+                                eficiente.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://list-tarefasmj.netlify.app/" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/Lista-tarefas"
+                                    target="_blank"> <img src="Imagens/icons/github (1).png" alt="">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 11 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/Cs.png" alt="landing page">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Landing Page</h3>
+                            <p class="project-desc">Uma página de destino moderna e responsiva.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://carlavendedora.netlify.app/" target="_blank">Ver
+                                    Projeto</a>
+                                <a class="btn github" href="https://github.com/matheus1289/freelance-carla-soares"
+                                    target="_blank"><img src="Imagens/icons/github (1).png" alt="">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 12 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="Imagens/fotos-projetos/mj.png" alt="previsão do tempo">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Landing Page</h3>
+                            <p class="project-desc">Em desenvolvimento...</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" href="https://1507.netlify.app/" target="_blank">Ver Projeto</a>
+                                <a class="btn github" href="" target="_blank"><img src="Imagens/icons/github (1).png"
+                                        alt=""> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-more">
+                    <button class="more-link">Ver mais projetos</button>
+                </div>
             </div>
         </section>
         <!--Fim section da pagina projetos -->
         <!-- pagina contato -->
-         <section id="contato" class="contato">
-            <div class="formulario">
-                <h2>Contato</h2>
-                <form class="formulario-contato" action="https://formsubmit.co/mass.josse72@gmail.com" method="POST">
+        <section id="contato">
+            <div class="contato-wrapper">
+                <!-- Coluna Esquerda - Informações -->
+                <div class="contato-info">
+                    <div class="contato-eyebrow">Contato</div>
+                    <h2 class="contato-titulo">Vamos <br>construir <br>algo junto.</h2>
+                    <p class="contato-descricao">Aberto a projetos freelance, oportunidades de emprego e colaborações.
+                        Se tem uma ideia ou desafio, envia uma mensagem!</p>
 
-                    <input type="hidden" name="_next" value="http://mjdesenvolvedor.com.br/sucesso.html">
-
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <input type="hidden" name="_subject" value="Novo contato!">
-
-                    <input type="hidden" name="_autoresponse" value="Obrigado pelo contato! Em breve, responderei!! ">
-
-                    <input type="text" placeholder="Nome:" name="name" required>
-
-                    <input type="email" placeholder="Email:" name="email" required>
-
-                    <input type="tel" placeholder="WhatsApp:(opcional)" name="tel">
-
-                    <textarea name="message" placeholder="Mensagem: "></textarea>
-
-                    <button class="botao-contato" type="submit">Enviar</button>
-
-               </form>
-            </div>
-            <div class="rodape">
-                <div class="flex">
-                    <div class="rede-sociais">
-                        <a href="https://www.instagram.com/theus_santtos2/" target="_blank"><i
-                                class="icons bi bi-instagram"></i></a>
-                        <a href="https://github.com/matheus1289" target="_blank"><i class="icons bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"><i
-                                class=" icons bi bi-linkedin"></i></a>
-                    </div>
+                    <ul class="contato-links">
+                        <li class="contato-link">
+                            <div class="contato-link-icone">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contato-link-info">
+                                <strong>Email</strong>
+                                <span>mass.josse72@gmail.com</span>
+                            </div>
+                            <div class="contato-link-seta">→</div>
+                        </li>
+                        <li class="contato-link">
+                            <div class="contato-link-icone">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div class="contato-link-info">
+                                <strong>GitHub</strong>
+                                <span>github.com/matheus1289</span>
+                            </div>
+                            <div class="contato-link-seta">→</div>
+                        </li>
+                        <li class="contato-link">
+                            <div class="contato-link-icone">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div class="contato-link-info">
+                                <strong>LinkedIn</strong>
+                                <span>Matheus Santos</span>
+                            </div>
+                            <div class="contato-link-seta">→</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="borda"></div>
-                <div class="line-footer ">
-                    <p><i class="bi bi-envelope-fill"></i></i> <a
-                            href="mailto:Mass.josse72@gmail.com">mass.josse72@gmail.com</a></p>
+
+                <!-- Coluna Direita - Formulário -->
+                <div class="contato-form-card">
+                    <div class="contato-form-topo"></div>
+
+                    <h3 class="contato-form-titulo">Enviar mensagem</h3>
+                    <p class="contato-form-sub">Respondo em até 48h +</p>
+
+                    <form action="https://formsubmit.co/mass.josse72@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="http://mjdesenvolvedor.com.br/sucesso.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo contato!">
+                        <input type="hidden" name="_autoresponse"
+                            value="Obrigado pelo contato! Em breve, responderei!!">
+
+                        <div class="contato-campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="name" required>
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="Projeto">Projeto Freelance</option>
+                                <option value="Oportunidade">Oportunidade de Emprego</option>
+                                <option value="Dúvida">Dúvida / Contato Geral</option>
+                                <option value="Collaboration">Colaboração</option>
+                            </select>
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="message" required></textarea>
+                        </div>
+
+                        <div class="contato-form-rodape">
+                            <small><strong>*</strong> Nenhum campo obrigatório</small>
+                            <button type="submit" class="contato-btn-enviar">Enviar <span>→</span></button>
+                        </div>
+                    </form>
+
+                    <div class="contato-sucesso">
+                        <h3>Mensagem enviada!</h3>
+                        <p>Obrigado pelo contato. Responderei em breve!</p>
+                    </div>
                 </div>
             </div>
 
         </section>
+        <div class="rodape">
+            <img src="Imagens/logoms.png" alt="logo">
+            <p>&copy; 2023 MJ Desenvolvedor. Todos os direitos reservados.</p>
+            <p>Desenvolvido por MJ Desenvolvedor</p>
+        </div>
         <div class="cima">
             <a href="#"><i class="bi bi-arrow-up-circle-fill icon"></i></i></a>
         </div>

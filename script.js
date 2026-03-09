@@ -63,8 +63,17 @@ const hambergeButton = document.querySelector("#hambergeButton");
 const closeButton = document.querySelector(".ativar");
 const mobileMenu = document.querySelector("#mobileMenu");
 const menu = document.querySelector("#menu-item");
+const btnProjetos = document.querySelector(".more-link");
+const projetos = document.querySelector(".ver-mais");
 
-
+btnProjetos.addEventListener("click", function (){
+    projetos.classList.toggle("visivel");
+    if(projetos.classList.contains("visivel")){
+        btnProjetos.textContent = "Ver menos";
+    } else {
+        btnProjetos.textContent = "Ver mais projetos";
+    }
+});
 
 hambergeButton.addEventListener("click", function (){
     if (hambergeButton.classList.contains('ativar')){

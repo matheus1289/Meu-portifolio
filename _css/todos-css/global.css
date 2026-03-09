@@ -1,0 +1,140 @@
+/* ==========================================
+   IMPORTS DE ESTILOS POR SEÇÃO
+   ========================================== */
+
+@import url('./sessao-1-apresentacao.css');
+@import url('./sessao-2-habilidades.css');
+@import url('./sessao-3-sobre.css');
+@import url('./sessao-5-contato.css');
+@import url('./sessao-4-projetos.css');
+@import url('./scroll-to-top.css');
+@import url('./navegacao.css');
+
+
+/* ==========================================
+   ESTILOS GLOBAIS
+   ========================================== */
+
+* {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+:root {
+    --cor-primary: #2563EB;
+    --cor-secundary: #0e0e0e;
+    --bg: #0f172a;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
+
+}
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+p {
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.flex {
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-tds {
+    background-color: var(--cor-primary);
+    padding: 15px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    height: 30px;
+    border-radius: 6px;
+    border: 2px solid var(--cor-primary);
+    transition: 0.4s;
+    margin-top: 15px;
+}
+
+@keyframes piscar {
+    0% {
+        box-shadow: 0 0 10px var(--cor-primary);
+    }
+
+    50% {
+        box-shadow: none;
+    }
+}
+
+.link-a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-tds:hover {
+    background-color: transparent;
+    animation: none;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primary);
+    border-radius: 10px;
+}
+
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+.foto,
+.container-2,
+.sobre-mim h3,
+.container3,
+.titulo,
+.subtitulo,
+.carta,
+.info-sobre {
+    visibility: hidden;
+}

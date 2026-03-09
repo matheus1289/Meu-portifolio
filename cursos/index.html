@@ -2,154 +2,286 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="pt-BR">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- css -->
-  <link rel="stylesheet" href="cursos.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- BootStrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Portfólio — Meus Cursos</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
-  <!-- favicon -->
-  <link rel="icon" href="../Imagens/icons/programacao.png" type="image/png">
-  <!-- script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="animacao.js" defer></script>
-  <title>Cursos</title>
+  <link rel="stylesheet" href="cursos.css">
 </head>
 
 <body>
-  <!-- navegacao -->
-  <header class="header">
-    <div class="texto"><a href="../index.html">
-        <p>Port<span>fólio</span></p>
-      </a></div>
-    <ul>
-      <a href="../index.html"><button>Inicio</button></a>
-    </ul>
-  </header>
-  <!-- fim navegacao -->
-  <section>
-    <div id="particles-js"></div>
-    <div class="title" data-aos="fade-down">
-      <h1>Meus <span>Cursos</span></h1>
-    </div>
 
-    <div class="containers">
-      <!-- curso 1 -->
-      <div class="cursos" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-        <img src="../Imagens/guia-git-e-github.png" alt="img">
-        <div class="informacao">
-          <h2>Git e Github</h2>
-          <ul>
-            <li>Carga horaria: 8horas</li>
-            <li>Entidade: Udemy</li>
-            <li>Conclusão: 2024</li>
-          </ul>
-          <hr>
-          <p>Aprendi os principais comandos do Git, como clone, pull, push, o uso de branches, GitFlow para Pull
-            Requests, Code Review, proteção de branches e manipulação de arquivos.</p>
-        </div>
-        <div class="botao">
-          <a href="../pdf/certificado git e github.pdf" target="_blank"><button>Certificado</button></a>
-        </div>
-      </div>
-      <!-- final curso 1 -->
-      <!-- curso 2 -->
-      <div class="cursos" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-        <img src="../Imagens/imagem_post_desenvolvimento_web.jpg" alt="desenvolvimento web">
-        <div class="informacao">
-          <h2>Desenvolvimento web</h2>
-          <ul>
-            <li>Carga horaria: 50horas</li>
-            <li>Entidade: Udemy</li>
-            <li>Conclusão: 2024</li>
-          </ul>
-          <hr>
-          <p>Domino HTML5, CSS3, JavaScript, jQuery, Bootstrap, ECMAScript 6, PHP e MySQL, com conhecimentos tanto
-            fundamentais quanto avançados, incluindo integração de PHP com MySQL e uso de AJAX.</p>
-        </div>
-        <div class="botao">
-          <a href="../pdf/certificado desenvolvedor web.pdf" target="_blank"><button>Certificado</button></a>
-        </div>
-      </div>
-      <!-- final curso 2 -->
-      <!-- curso 3 -->
-      <div class="cursos" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
-        <img src="../Imagens/linguagem-programacao-python-1.webp" alt="img">
-        <div class="informacao">
-          <h2>Python</h2>
-          <ul>
-            <li>Carga horaria: 18horas</li>
-            <li>Entidade: Udemy</li>
-            <li>Conclusão: 2023</li>
-          </ul>
-          <hr>
-          <p>Aprendemos Python com foco em algoritmos, lógica de programação e atividades práticas. O curso abordou
-            saída de dados, fluxo de programas, variáveis, operações aritméticas, condicionais, loops, funções, objetos,
-            classes e herança.</p>
-        </div>
-        <div class="botao">
-          <a href="../pdf/certificado python.pdf" target="_blank"><button>Certificado</button></a>
-        </div>
-      </div>
-      <!-- final curso 3 -->
-      <!-- curso 4 -->
-      <div class="cursos" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
-        <img src="../Imagens/javascript.avif" alt="python">
-        <div class="informacao">
-          <h2>Algoritmo e Lógica</h2>
-          <ul>
-            <li>Carga horaria: 20horas</li>
-            <li>Entidade: Udemy</li>
-            <li>Conclusão: 2024</li>
-          </ul>
-          <hr>
-          <p>O curso de Algoritmo e Lógica de Programação foi ensinado em JavaScript, cobrindo algoritmos, configuração
-            do ambiente, funções, estruturas de controle e repetição, operadores, objetos e fundamentos essenciais para
-            o desenvolvimento como programador</p>
-        </div>
-        <div class="botao">
-          <a href="../pdf/certificado javascript.pdf" target="_blank"><button>Certificado</button></a>
-        </div>
-      </div>
-      <!-- final curso 1 -->
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Port<span>fólio</span></div>
+    <a href="../index.html"><button class="nav-btn">Início</button></a>
+  </nav>
 
-    </div>
-    <footer class="rodape">
-      <div class="flex"></div>
-
-      <div class="rede-sociais">
-        <a href="https://www.instagram.com/theus_santtos2/" target="_blank"><i class="icons bi bi-instagram"></i></a>
-        <a href="https://github.com/matheus1289" target="_blank"><i class="icons bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"><i
-            class=" icons bi bi-linkedin"></i></a>
-      </div>
-      </div>
-      <div class="line-footer borda">
-        <p><i class="bi bi-envelope-fill"></i></i> <a href="mailto:Mass.josse72@gmail.com">mass.josse72@gmail.com</a>
-        </p>
-      </div>
-    </footer>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label">Formação Técnica</div>
+    <h1>Meus <em>Cursos</em></h1>
+    <p class="hero-sub">Certificações e aprendizados que constroem minha jornada como desenvolvedor.</p>
   </section>
 
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">6</div>
+      <div class="stat-lbl">Cursos</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">123h</div>
+      <div class="stat-lbl">Carga Total</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3</div>
+      <div class="stat-lbl">Plataformas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2025</div>
+      <div class="stat-lbl">Último Cert.</div>
+    </div>
+  </div>
 
+  <!-- GRID -->
+  <div class="grid-wrap">
+    <div class="grid">
 
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">🔀</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Git e Github</h2>
+            <span class="badge-year">2024</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              8 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Udemy
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">Aprendi os principais comandos do Git, como clone, pull, push, o uso de branches, GitFlow
+            para Pull Requests, Code Review, proteção de branches e manipulação de arquivos.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/certificado git e github.pdf" target="_blank">
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">🌐</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Desenvolvimento Web</h2>
+            <span class="badge-year">2024</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              50 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Udemy
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">Domínio de HTML5, CSS3, JavaScript, jQuery, Bootstrap, ECMAScript 6, PHP e MySQL, com
+            conhecimentos tanto fundamentais quanto avançados, incluindo integração de PHP com MySQL e uso de AJAX.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/certificado desenvolvedor web.pdf" target="_blank">
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">🐍</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Python</h2>
+            <span class="badge-year">2023</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              18 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Udemy
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">Aprendemos Python com foco em algoritmos, lógica de programação e atividades práticas. O
+            curso abordou saída de dados, fluxo de programas, variáveis, operações aritméticas, condicionais, loops,
+            funções, objetos, classes e herança.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/certificado python.pdf" target="_blank" >
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">⚡</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Algoritmo e Lógica</h2>
+            <span class="badge-year">2024</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              20 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Udemy
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">O curso de Algoritmo e Lógica de Programação foi ensinado em JavaScript, cobrindo
+            algoritmos, configuração do ambiente, funções, estruturas de controle e repetição, operadores, objetos e
+            fundamentos essenciais para o desenvolvimento como programador.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/certificado javascript.pdf" target="_blank">
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">💬</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Comunicação Empresarial</h2>
+            <span class="badge-year">2025</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              12 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Fundação Bradesco
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">Curso autoinstrucional pela Escola Virtual da Fundação Bradesco, abordando fundamentos e
+            práticas de comunicação no ambiente corporativo, concluído entre fevereiro e março de 2025.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/Certificado comunicacão empresarial.pdf" target="_blank">
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-thumb-placeholder">🎨</div>
+        <div class="card-body">
+          <div class="card-top">
+            <h2 class="card-title">Figma Design de Interfaces</h2>
+            <span class="badge-year">2025</span>
+          </div>
+          <div class="card-meta">
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              15.5 horas
+            </div>
+            <div class="meta-pill">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Udemy
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="card-desc">Curso completo de Figma do zero ao profissional 2025, com instrutor Matheus Fraga.
+            Abrange design de interfaces, prototipagem, componentes, auto layout e boas práticas de UI/UX para projetos
+            reais.</p>
+          <div class="card-footer">
+            <a class="cert-btn" href="../pdf/figma.pdf" target="_blank">
+              Ver Certificado
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    Desenvolvido por MJ Desenvolvedor &copy; 2025. Todos os direitos reservados.
+  </footer>
 
 </body>
-<script type="text/javascript" src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

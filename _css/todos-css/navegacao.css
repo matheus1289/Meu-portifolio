@@ -2,10 +2,8 @@
     font-family: "Roboto", sans-serif; 
 }
 
-/*variaveis*/
-:root{
-    --cor-primary:rgb(51, 228, 51);
-}
+
+
 
 
 /*Navegação*/
@@ -146,7 +144,7 @@ li{
     text-decoration: none;
 }
 .texto img{
-    width: 100px;
+    width: 180px;
 }
 .texto p span{
     color: var(--cor-primary);
@@ -219,6 +217,15 @@ header .flex{
     opacity: 1;
 }
 @media (max-width:780px){
+
+    .container-nav.rolagem{
+    height: 80px;
+}
+.texto img{
+    width: 150px;
+    margin-left: -30%;
+}
+
     .container-paragrafo{
         display: none;
     }

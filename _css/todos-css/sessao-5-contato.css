@@ -1,0 +1,630 @@
+/* ========================================
+   SEÇÃO CONTATO - Escopado em #contato
+   ======================================== */
+
+#contato {
+    min-height: 100vh;
+    width: 100%;
+    background:url(../../Imagens/fundo-portfolio.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    position: relative;
+}
+
+/* ========== Keyframes de Animação ========== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+    }
+}
+
+@keyframes slideArrow {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========== Container Principal ========== */
+
+#contato .contato-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    animation: fadeUp 0.8s ease-out;
+}
+
+/* ========== Coluna Esquerda - Informações ========== */
+
+#contato .contato-info {
+    animation: fadeUp 0.8s ease-out 0.1s backwards;
+}
+
+#contato .contato-eyebrow {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cor-primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+#contato .contato-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#contato .contato-descricao {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+    max-width: 450px;
+}
+
+#contato .contato-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contato .contato-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: rgba(37, 99, 235, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: fadeUp 0.8s ease-out backwards;
+}
+
+#contato .contato-link:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#contato .contato-link:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+#contato .contato-link:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#contato .contato-link:hover {
+    border-color: var(--cor-primary);
+    background-color: rgba(37, 99, 235, 0.1);
+    transform: translateX(8px);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+}
+
+#contato .contato-link-icone {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cor-primary), rgba(37, 99, 235, 0.7));
+    color: #ffffff;
+    font-size: 18px;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+#contato .contato-link:hover .contato-link-icone {
+    animation: pulseGlow 1s ease-in-out;
+}
+
+#contato .contato-link-info {
+    flex: 1;
+}
+
+#contato .contato-link-info strong {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+#contato .contato-link-info span {
+    display: block;
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#contato .contato-link-seta {
+    font-size: 18px;
+    color: var(--cor-primary);
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+}
+
+#contato .contato-link:hover .contato-link-seta {
+    animation: slideArrow 0.6s ease-in-out infinite;
+    opacity: 1;
+}
+
+/* ========== Coluna Direita - Formulário Card ========== */
+
+#contato .contato-form-card {
+    position: relative;
+    padding: 40px 32px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    animation: slideInRight 0.8s ease-out 0.2s backwards;
+}
+
+#contato .contato-form-topo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--cor-primary), transparent);
+    border-radius: 12px 12px 0 0;
+}
+
+#contato .contato-form-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+#contato .contato-form-sub {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+}
+
+#contato .contato-campo {
+    margin-bottom: 17px;
+}
+
+#contato .contato-campo label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+#contato .contato-campo input,
+#contato .contato-campo textarea,
+#contato .contato-campo select {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#contato .contato-campo input::placeholder,
+#contato .contato-campo textarea::placeholder,
+#contato .contato-campo select::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#contato .contato-campo input:focus,
+#contato .contato-campo textarea:focus,
+#contato .contato-campo select:focus {
+    outline: none;
+    border-color: var(--cor-primary);
+    background-color: rgba(37, 99, 235, 0.05);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1),
+        0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+#contato .contato-campo textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#contato .contato-campo select {
+    cursor: pointer;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+#contato .contato-campo select option {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+/* ========== Rodapé do Formulário ========== */
+
+#contato .contato-form-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+#contato .contato-form-rodape small {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#contato .contato-form-rodape small strong {
+    color: var(--cor-primary);
+}
+
+/* ========== Botão Enviar ========== */
+
+#contato .contato-btn-enviar {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: var(--cor-primary);
+    border: 2px solid var(--cor-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+#contato .contato-btn-enviar:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+#contato .contato-btn-enviar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+}
+
+#contato .contato-btn-enviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ========== Overlay de Sucesso ========== */
+
+#contato .contato-sucesso {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 10;
+    gap: 16px;
+    padding: 40px 20px;
+}
+
+#contato .contato-sucesso::before {
+    content: '✓';
+    font-size: 3.5rem;
+    color: var(--cor-primary);
+    font-weight: bold;
+    animation: fadeUp 0.6s ease-out;
+}
+
+#contato .contato-sucesso.ativo {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeInOverlay 0.5s ease;
+}
+
+#contato .contato-sucesso h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    animation: fadeUp 0.6s ease-out 0.1s backwards;
+}
+
+#contato .contato-sucesso p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 0;
+    max-width: 280px;
+    animation: fadeUp 0.6s ease-out 0.2s backwards;
+}
+
+/* ========== Rodapé ========== */
+
+.rodape {
+    width: 100%;
+    padding: 10px 8%;
+    height: 100px;
+    background-color: var(--cor-secundary);
+    border-top: 1px solid rgba(37, 99, 235, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    animation: fadeUp 0.8s ease-out 0.4s backwards;
+}
+
+.rodape img {
+    height: 150px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.rodape img:hover {
+    opacity: 1;
+}
+
+.rodape p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.rodape p:first-of-type {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.rodape p:last-of-type {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* ========== Responsividade ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    #contato .contato-wrapper {
+        gap: 48px;
+    }
+
+    #contato .contato-titulo {
+        font-size: 2rem;
+    }
+
+    #contato .contato-form-card {
+        padding: 32px 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #contato {
+        padding: 40px 10%;
+    }
+
+    #contato .contato-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    #contato .contato-titulo {
+        font-size: 1.75rem;
+    }
+
+    #contato .contato-descricao {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+    }
+
+    #contato .contato-form-card {
+        max-width: 100%;
+        padding: 28px 20px;
+    }
+
+    #contato .contato-form-titulo {
+        font-size: 1.5rem;
+    }
+
+    #contato .contato-campo {
+        margin-bottom: 18px;
+    }
+
+    #contato .contato-form-rodape {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #contato .contato-btn-enviar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #contato .contato-link {
+        padding: 10px 12px;
+    }
+
+    #contato .contato-link-icone {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #contato .rodape {
+        padding: 40px 16px 30px;
+        margin-top: 60px;
+        gap: 16px;
+    }
+
+    #contato .rodape img {
+        height: 45px;
+    }
+
+    #contato .rodape p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+    #contato {
+        padding: 30px 12px;
+    }
+
+    #contato .contato-titulo {
+        font-size: 1.5rem;
+    }
+
+    #contato .contato-eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    #contato .contato-form-card {
+        padding: 20px 16px;
+    }
+
+    #contato .contato-form-titulo {
+        font-size: 1.25rem;
+        margin-bottom: 4px;
+    }
+
+    #contato .contato-form-sub {
+        font-size: 0.85rem;
+        margin-bottom: 24px;
+    }
+
+    #contato .contato-campo input,
+    #contato .contato-campo textarea,
+    #contato .contato-campo select {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    #contato .contato-campo textarea {
+        min-height: 100px;
+    }
+
+    #contato .contato-btn-enviar {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+
+    #contato .rodape {
+        padding: 30px 12px 25px;
+        margin-top: 50px;
+        gap: 12px;
+    }
+
+    #contato .rodape img {
+        height: 40px;
+    }
+
+    #contato .rodape p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 960px){
+    .rodape{
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 20px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .rodape img{
+        margin-bottom: -50px;
+        margin-top: -30px;
+    }
+}
