@@ -1,45 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card-links</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="_css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- LINK FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- font icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="img/icons8-links-64.png" type="image/x-icon">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Matheus Santos — Links</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="_css/meus-links.css">
 </head>
+
 <body>
+
+    <!-- PARTICLES BACKGROUND -->
     <div id="particles-js"></div>
-    <section class="container" data-aos="zoom-in" data-aos-duration="1500" > 
-        <div class="topo">
-            <img src="Imagens/foto1.jpg" alt="foto-matheus">
-            <h2 data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1600">Matheus santos</h2>
-        </div>
-        <div class="links-container">   
-            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="links" href="https://www.instagram.com/theus_santtos2/" target="_blank">Instagran <i class="fa-brands fa-square-instagram"></i>
-            </a>
 
-            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="links" href="https://mjdesenvolvedor.com.br/" target="_blank">Portfólio <i class="fa-solid fa-address-book"></i></a>
+    <div class="card">
 
-            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" class="links" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank">Linkdin <i class="fa-brands fa-linkedin"></i></a>
-            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="900" class="links" href="https://github.com/matheus1289" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
-            
-            <a data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000" class="links" href="pdf/currículoAtualizado.pdf" target="_blank">Currículo <i class="fa-solid fa-file-pdf"></i></a>
+        <!-- AVATAR -->
+        <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring avatar-ring-2"></div>
+            <div class="avatar-glow"></div>
+            <img class="avatar" src="Imagens/foto1.jpg" alt="Matheus Santos"
+                onerror="this.style.background='#111328';this.removeAttribute('src')">
+            <div class="avatar-status"></div>
         </div>
-    </section>
-    <script>
-        AOS.init();
-    </script>
-    <script type="text/javascript" src="../js/particles.js"></script>
-    <script type="text/javascript" src="../js/app.js"></script>
+
+        <!-- NAME -->
+        <h1 class="profile-name">Matheus Santos</h1>
+        <p class="profile-role">Desenvolvedor Web</p>
+        <span class="profile-tag">Disponível para projetos</span>
+
+        <div class="divider"></div>
+
+        <!-- LINKS -->
+        <ul class="links-list">
+
+            <li class="link-item">
+                <a class="link-btn" href="https://www.instagram.com/theus_santtos2/" target="_blank" rel="noopener">
+                    <span class="link-icon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="link-label">Instagram</span>
+                    <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+            </li>
+
+            <li class="link-item">
+                <a class="link-btn" href="https://mjdesenvolvedor.com.br/" target="_blank" rel="noopener">
+                    <span class="link-icon"><i class="fa-solid fa-address-book"></i></span>
+                    <span class="link-label">Portfólio</span>
+                    <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+            </li>
+
+            <li class="link-item">
+                <a class="link-btn" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"
+                    rel="noopener">
+                    <span class="link-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span class="link-label">LinkedIn</span>
+                    <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+            </li>
+
+            <li class="link-item">
+                <a class="link-btn" href="https://github.com/matheus1289" target="_blank" rel="noopener">
+                    <span class="link-icon"><i class="fa-brands fa-github"></i></span>
+                    <span class="link-label">GitHub</span>
+                    <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+            </li>
+
+            <li class="link-item">
+                <a class="link-btn" href="pdf/currículoAtualizado.pdf" target="_blank" rel="noopener">
+                    <span class="link-icon"><i class="fa-solid fa-file-pdf"></i></span>
+                    <span class="link-label">Currículo</span>
+                    <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+            </li>
+
+        </ul>
+
+        <p class="card-footer">© 2025 <span>Matheus Santos</span> — Dev</p>
+    </div>
+
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
