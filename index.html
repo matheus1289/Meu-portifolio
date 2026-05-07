@@ -47,46 +47,34 @@
 </head>
 
 <body>
-    <header>
-        <div id="header" class="container-nav">
-
-            <div class="texto">
-                <a href="index.html">
-                    <img src="Imagens/logoms.png" alt="logo">
-                </a>
-            </div>
-            <nav>
-                <ul class="container-paragrafo">
-                    <li class="diferenca"><a href="#">Inicio</a></li>
-                    <li class="diferenca "><a href="#sobre">Sobre</a></li>
-                    <li class="diferenca "><a href="#habilidades">Habilidades</a></li>
-                    <li class="diferenca "><a href="#projetos">Projetos</a></li>
-                    <a href="cursos/index.html"><button class="botao-nav">Cursos</button></a>
-                </ul>
-
-                <div class="mobile-menu" id="mobileMenu">
-                    <img src="Imagens/logoms.png" alt="logo">
-                    <ul class="nav-links-mobile" id="menu-item">
-
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <a class="nav-link-button" href="cursos/index.html"><button
-                                class="botao-nav">Cursos</button></a>
-                    </ul>
-                </div>
-                <button class="hamberger" id="hambergeButton" onclick="this.classList.toggle('ativar')">
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                </button>
-            </nav>
+    <nav data-aos="zoom-out-down">
+        <div class="nav-logo"><img src="Imagens/logoPortfolio.webp" alt="logotipo"></div>
+        <ul class="nav-links nav-links-desktop">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="cursos/index.html" class="nav-cta nav-cta-desktop">Cursos →</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="nav-mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
 
-        </div>
+    </nav>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+        <ul class="nav-mobile-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="cursos/index.html" class="nav-cta nav-cta-mobile">Cursos →</a>
+    </div>
 
-    </header>
     <main>
         <!-- section da pagina inicial -->
         <section id="inicio" class="hero">
@@ -286,7 +274,7 @@
                             <span class="skill-badge">Python</span>
                             <span class="skill-badge">MySQL</span>
                             <span class="skill-badge">REST APIs</span>
-                    
+
                         </div>
                     </div>
 
@@ -623,7 +611,7 @@
 
         </section>
         <div class="rodape">
-            <img src="Imagens/logoms.png" alt="logo">
+            <img src="Imagens/logoPortfolio.webp" alt="logo">
             <p>&copy; 2023 MJ Desenvolvedor. Todos os direitos reservados.</p>
             <p>Desenvolvido por MJ Desenvolvedor</p>
         </div>
