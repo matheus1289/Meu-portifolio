@@ -86,7 +86,7 @@ nav.scrolled {
   bottom: -8px;
   width: 100%;
   height: 2px;
-  background: var(--blue);
+  background: var(--cor-primary);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.25s ease;
@@ -103,8 +103,13 @@ nav.scrolled {
 }
 
 nav.scrolled .nav-links a {
-  color: #000000;
+  color: #ffffff;
   opacity: 0.9;
+}
+
+nav.scrolled .nav-links a:hover {
+  color: var(--cor-primary);
+  opacity: 1;
 }
 
 

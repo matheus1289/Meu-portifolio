@@ -76,7 +76,7 @@ function initNavHighlight() {
         return;
       }
 
-      a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--blue)' : '';
+      a.style.color = a.getAttribute('href') === '#' + cur ? '#1135e9ff' : '';
     });
   });
 }
