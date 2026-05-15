@@ -139,3 +139,20 @@ function initNavbar() {
 // Inicializar as funções
 initNavbar();
 initNavHighlight();
+
+
+
+function MaisProjetos() {
+  const vermais = document.querySelector('.ver-mais');
+  const btn = document.querySelector('.more-link');
+
+  if (vermais.classList.contains('ver-mais-visivel')) {
+    btn.textContent = 'ver mais projetos ⬇️';
+  } else {
+    btn.textContent = 'Ver menos ⬆️';
+  }
+
+  vermais.classList.toggle('ver-mais-visivel');
+
+}
+
