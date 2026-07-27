@@ -132,16 +132,22 @@
 }
 
 #contato .contato-link {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 12px 16px;
     border-radius: 8px;
     border: 2px solid transparent;
     background-color: rgba(37, 99, 235, 0.05);
     transition: all 0.3s ease;
     cursor: pointer;
     animation: fadeUp 0.8s ease-out backwards;
+}
+
+#contato .contato-link a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
 }
 
 #contato .contato-link:nth-child(1) {
@@ -529,7 +535,7 @@
         justify-content: center;
     }
 
-    #contato .contato-link {
+    #contato .contato-link a {
         padding: 10px 12px;
     }
 
