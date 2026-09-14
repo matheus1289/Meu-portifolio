@@ -1,133 +1,238 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
+/* ==========================================================================
+   MEUS LINKS — INTERACTIVE APP JAVASCRIPT
+   Developer: Matheus Santos
+   ========================================================================== */
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize components
+    initParticlesCanvas();
+    init3DTilt();
+    initShareFeature();
+    initDynamicYear();
 });
-*/
 
-/* Otherwise just put the config content (json): */
+/* --------------------------------------------------------------------------
+   1. HTML5 CANVAS TECH PARTICLES BACKGROUND
+   -------------------------------------------------------------------------- */
+function initParticlesCanvas() {
+    const canvas = document.getElementById('bg-canvas');
+    if (!canvas) return;
 
-particlesJS('particles-js',
-  
-  {
-    "particles": {
-      "number": {
-        "value": 100,
-        "density": {
-          "enable": true,
-          "value_area": 800
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    let particles = [];
+    const particleCount = Math.min(Math.floor(width * 0.05), 65);
+
+    let mouse = {
+        x: null,
+        y: null,
+        radius: 120
+    };
+
+    window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+    });
+
+    window.addEventListener('mouseleave', () => {
+        mouse.x = null;
+        mouse.y = null;
+    });
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        createParticles();
+    });
+
+    class Particle {
+        constructor() {
+            this.x = Math.random() * width;
+            this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 0.6;
+            this.vy = (Math.random() - 0.5) * 0.6;
+            this.size = Math.random() * 2 + 1;
+            this.baseAlpha = Math.random() * 0.4 + 0.2;
+            this.color = Math.random() > 0.4 ? '#00f0ff' : '#6366f1';
         }
-      },
-      "color": {
-        "value": "#2563EB"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
+
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+
+            if (this.x < 0) this.x = width;
+            if (this.x > width) this.x = 0;
+            if (this.y < 0) this.y = height;
+            if (this.y > height) this.y = 0;
+
+            // Mouse proximity effect
+            if (mouse.x !== null && mouse.y !== null) {
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < mouse.radius) {
+                    let force = (mouse.radius - dist) / mouse.radius;
+                    this.x -= (dx / dist) * force * 1.5;
+                    this.y -= (dy / dist) * force * 1.5;
+                }
+            }
         }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.globalAlpha = this.baseAlpha;
+            ctx.fill();
         }
-      },
-      "size": {
-        "value": 5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
     }
-  }
 
-);
+    function createParticles() {
+        particles = [];
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+    }
+
+    function connectParticles() {
+        for (let a = 0; a < particles.length; a++) {
+            for (let b = a + 1; b < particles.length; b++) {
+                let dx = particles[a].x - particles[b].x;
+                let dy = particles[a].y - particles[b].y;
+                let dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 130) {
+                    let alpha = (1 - dist / 130) * 0.25;
+                    ctx.beginPath();
+                    ctx.moveTo(particles[a].x, particles[a].y);
+                    ctx.lineTo(particles[b].x, particles[b].y);
+                    ctx.strokeStyle = '#00f0ff';
+                    ctx.globalAlpha = alpha;
+                    ctx.lineWidth = 0.8;
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        
+        particles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+
+        connectParticles();
+        requestAnimationFrame(animate);
+    }
+
+    createParticles();
+    animate();
+}
+
+/* --------------------------------------------------------------------------
+   2. INTERACTIVE 3D CARD TILT EFFECT
+   -------------------------------------------------------------------------- */
+function init3DTilt() {
+    const card = document.getElementById('tilt-card');
+    if (!card || window.innerWidth < 768) return; // Only on desktop/tablet
+
+    const maxTilt = 8; // degrees
+
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -maxTilt;
+        const rotateY = ((x - centerX) / centerX) * maxTilt;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+        card.style.transition = 'transform 0.5s ease';
+    });
+
+    card.addEventListener('mouseenter', () => {
+        card.style.transition = 'none';
+    });
+}
+
+/* --------------------------------------------------------------------------
+   3. SHARE FEATURE & TOAST NOTIFICATION
+   -------------------------------------------------------------------------- */
+function initShareFeature() {
+    const shareBtn = document.getElementById('share-btn');
+    const toast = document.getElementById('toast');
+    let toastTimeout;
+
+    if (!shareBtn) return;
+
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Matheus Santos — Desenvolvedor Web',
+            text: 'Confira o perfil e links oficiais de Matheus Santos, Desenvolvedor Web.',
+            url: window.location.href
+        };
+
+        // Try Native Share API first
+        if (navigator.share && window.innerWidth < 768) {
+            try {
+                await navigator.share(shareData);
+                return;
+            } catch (err) {
+                // User cancelled or share failed, fallback to copy
+            }
+        }
+
+        // Copy Link Fallback
+        copyToClipboard(window.location.href);
+        showToast('Link da página copiado!');
+    });
+
+    function copyToClipboard(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text);
+        } else {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    }
+
+    function showToast(message) {
+        if (!toast) return;
+
+        const messageEl = toast.querySelector('.toast-message');
+        if (messageEl) messageEl.textContent = message;
+
+        toast.classList.add('show');
+
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. DYNAMIC YEAR IN FOOTER
+   -------------------------------------------------------------------------- */
+function initDynamicYear() {
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+}

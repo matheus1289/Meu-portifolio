@@ -4,89 +4,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Santos — Links</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Italiana&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO & Metadata -->
+    <title>Matheus Santos — Desenvolvedor Web | Meus Links</title>
+    <meta name="description" content="Desenvolvedor Web Front-End. Acesse meus links oficiais, portfólio, projetos no GitHub, perfil no LinkedIn, Instagram e currículo.">
+    <meta name="author" content="Matheus Santos">
+    <meta name="keywords" content="Matheus Santos, Desenvolvedor Web, Front-End, React, JavaScript, HTML, CSS, Portfolio, Links">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mjdesenvolvedor.com.br/meus-links.html">
+    <meta property="og:title" content="Matheus Santos — Desenvolvedor Web">
+    <meta property="og:description" content="Conecte-se com Matheus Santos. Confira portfólio, GitHub, LinkedIn, Instagram e currículo em um só lugar.">
+    <meta property="og:image" content="Imagens/foto1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Matheus Santos — Desenvolvedor Web">
+    <meta property="twitter:description" content="Conecte-se com Matheus Santos. Confira portfólio, GitHub, LinkedIn, Instagram e currículo em um só lugar.">
+    <meta property="twitter:image" content="Imagens/foto1.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Imagens/LOGOMS-SITE.png">
+
+    <!-- Google Fonts: Space Grotesk & Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos Customizados -->
     <link rel="stylesheet" href="_css/meus-links.css">
 </head>
 
 <body>
 
-    <!-- PARTICLES BACKGROUND -->
-    <div id="particles-js"></div>
+    <!-- PARTICLES CANVAS BACKGROUND -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- AMBIENT GLOW ORBS -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
 
-    <div class="card">
-
-        <!-- AVATAR -->
-        <div class="avatar-wrap">
-            <div class="avatar-ring"></div>
-            <div class="avatar-ring avatar-ring-2"></div>
-            <div class="avatar-glow"></div>
-            <img class="avatar" src="Imagens/foto1.jpg" alt="Matheus Santos"
-                onerror="this.style.background='#111328';this.removeAttribute('src')">
-            <div class="avatar-status"></div>
+    <!-- MAIN PROFILE CARD -->
+    <main class="profile-card" id="tilt-card">
+        
+        <!-- QUICK ACTION BAR -->
+        <div class="card-action-bar">
+            <button class="share-btn" id="share-btn" title="Compartilhar Perfil" aria-label="Compartilhar Perfil">
+                <i class="fa-solid fa-share-nodes"></i>
+            </button>
         </div>
 
-        <!-- NAME -->
-        <h1 class="profile-name">Matheus Santos</h1>
-        <p class="profile-role">Desenvolvedor Web</p>
-        <span class="profile-tag">Disponível para projetos</span>
+        <!-- HEADER / AVATAR SECTION -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <div class="avatar-ring ring-outer"></div>
+                <div class="avatar-ring ring-inner"></div>
+                <div class="avatar-glow"></div>
+                
+                <img class="avatar-img" 
+                     src="Imagens/foto1.jpg" 
+                     alt="Foto de perfil de Matheus Santos"
+                     loading="eager"
+                     onerror="this.onerror=null; this.src='Imagens/foto-principal2.jpg';">
+                
+                <span class="online-indicator" title="Disponível para projetos" aria-label="Status: Disponível para projetos"></span>
+            </div>
+
+            <h1 class="profile-name">Matheus Santos</h1>
+            <p class="profile-role">Desenvolvedor Web</p>
+            
+            <div class="status-badge">
+                <span class="status-pulse-dot"></span>
+                <span class="status-text">Disponível para projetos</span>
+            </div>
+        </header>
 
         <div class="divider"></div>
 
-        <!-- LINKS -->
-        <ul class="links-list">
+        <!-- LINKS SECTION -->
+        <section class="links-section" aria-label="Links de Redes e Contato">
+            <ul class="links-list">
 
-            <li class="link-item">
-                <a class="link-btn" href="https://www.instagram.com/theus_santtos2/" target="_blank" rel="noopener">
-                    <span class="link-icon"><i class="fa-brands fa-instagram"></i></span>
-                    <span class="link-label">Instagram</span>
-                    <i class="fa-solid fa-arrow-right link-arrow"></i>
-                </a>
-            </li>
+                <!-- 1. INSTAGRAM -->
+                <li class="link-item" style="--i: 1;">
+                    <a class="link-card" href="https://www.instagram.com/theus_santtos2/" target="_blank" rel="noopener noreferrer" id="link-instagram">
+                        <div class="link-icon-wrap icon-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">Instagram</span>
+                            <span class="link-subtitle">@theus_santtos2</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    </a>
+                </li>
 
-            <li class="link-item">
-                <a class="link-btn" href="https://mjdesenvolvedor.com.br/" target="_blank" rel="noopener">
-                    <span class="link-icon"><i class="fa-solid fa-address-book"></i></span>
-                    <span class="link-label">Portfólio</span>
-                    <i class="fa-solid fa-arrow-right link-arrow"></i>
-                </a>
-            </li>
+                <!-- 2. PORTFÓLIO -->
+                <li class="link-item" style="--i: 2;">
+                    <a class="link-card highlight-card" href="https://mjdesenvolvedor.com.br/" target="_blank" rel="noopener noreferrer" id="link-portfolio">
+                        <div class="link-icon-wrap icon-portfolio">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">Portfólio Oficial</span>
+                            <span class="link-subtitle">mjdesenvolvedor.com.br</span>
+                        </div>
+                        <span class="badge-featured">Destaque</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    </a>
+                </li>
 
-            <li class="link-item">
-                <a class="link-btn" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank"
-                    rel="noopener">
-                    <span class="link-icon"><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span class="link-label">LinkedIn</span>
-                    <i class="fa-solid fa-arrow-right link-arrow"></i>
-                </a>
-            </li>
+                <!-- 3. LINKEDIN -->
+                <li class="link-item" style="--i: 3;">
+                    <a class="link-card" href="https://www.linkedin.com/in/matheus-santos-b48833187/" target="_blank" rel="noopener noreferrer" id="link-linkedin">
+                        <div class="link-icon-wrap icon-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">LinkedIn</span>
+                            <span class="link-subtitle">Conectar e Rede Profissional</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    </a>
+                </li>
 
-            <li class="link-item">
-                <a class="link-btn" href="https://github.com/matheus1289" target="_blank" rel="noopener">
-                    <span class="link-icon"><i class="fa-brands fa-github"></i></span>
-                    <span class="link-label">GitHub</span>
-                    <i class="fa-solid fa-arrow-right link-arrow"></i>
-                </a>
-            </li>
+                <!-- 4. GITHUB -->
+                <li class="link-item" style="--i: 4;">
+                    <a class="link-card" href="https://github.com/matheus1289" target="_blank" rel="noopener noreferrer" id="link-github">
+                        <div class="link-icon-wrap icon-github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">GitHub</span>
+                            <span class="link-subtitle">Repositórios e Código Fonte</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    </a>
+                </li>
 
-            <li class="link-item">
-                <a class="link-btn" href="pdf/currículoAtualizado.pdf" target="_blank" rel="noopener">
-                    <span class="link-icon"><i class="fa-solid fa-file-pdf"></i></span>
-                    <span class="link-label">Currículo</span>
-                    <i class="fa-solid fa-arrow-right link-arrow"></i>
-                </a>
-            </li>
+                <!-- 5. CURRÍCULO (PDF) -->
+                <li class="link-item" style="--i: 5;">
+                    <a class="link-card" href="https://mjdesenvolvedor.com.br/pdf/curr%C3%ADculoAtualizado.pdf" target="_blank" rel="noopener noreferrer" id="link-curriculo">
+                        <div class="link-icon-wrap icon-curriculo">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">Currículo (PDF)</span>
+                            <span class="link-subtitle">Baixar Resume Atualizado</span>
+                        </div>
+                        <i class="fa-solid fa-download link-arrow"></i>
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+        </section>
 
-        <p class="card-footer">© 2025 <span>Matheus Santos</span> — Dev</p>
+        <!-- FOOTER -->
+        <footer class="profile-footer">
+            <p>© <span id="year">2025</span> <strong>Matheus Santos</strong> — Dev</p>
+        </footer>
+
+    </main>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message">Link copiado com sucesso!</span>
     </div>
 
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
