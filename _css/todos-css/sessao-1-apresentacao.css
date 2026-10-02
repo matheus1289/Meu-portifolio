@@ -4,8 +4,8 @@
    HERO
 ══════════════════════════════ */
 .hero {
-    position: relative;
     background-color: var(--cor-secundary);
+    position: relative;
     z-index: 1;
     min-height: 100vh;
     display: grid;
@@ -19,6 +19,8 @@
 
 /* ── LEFT COLUMN ── */
 .hero-left {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -246,6 +248,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 2;
     opacity: 0;
     animation: fadeIn 1s 0.5s ease forwards;
 }
@@ -528,7 +531,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
 }
 

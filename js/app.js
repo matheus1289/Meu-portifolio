@@ -3,13 +3,108 @@
    Developer: Matheus Santos
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize components
+function initApp() {
+    initParticlesHero();
     initParticlesCanvas();
     init3DTilt();
     initShareFeature();
     initDynamicYear();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+} else {
+    initApp();
+}
+
+/* --------------------------------------------------------------------------
+   0. PARTICLES.JS HERO BACKGROUND INITIALIZATION
+   -------------------------------------------------------------------------- */
+function initParticlesHero() {
+    const container = document.getElementById('particles-js');
+    if (!container || typeof particlesJS === 'undefined') return;
+
+    particlesJS('particles-js', {
+        particles: {
+            number: {
+                value: 60,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: ['#2563eb', '#3b82f6', '#60a5fa', '#ffffff']
+            },
+            shape: {
+                type: 'circle'
+            },
+            opacity: {
+                value: 0.45,
+                random: true,
+                anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.15,
+                    sync: false
+                }
+            },
+            size: {
+                value: 3.5,
+                random: true,
+                anim: {
+                    enable: true,
+                    speed: 2,
+                    size_min: 1,
+                    sync: false
+                }
+            },
+            line_linked: {
+                enable: true,
+                distance: 140,
+                color: '#2563eb',
+                opacity: 0.25,
+                width: 1.2
+            },
+            move: {
+                enable: true,
+                speed: 1.6,
+                direction: 'none',
+                random: true,
+                straight: false,
+                out_mode: 'out',
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: 'window',
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: 'grab'
+                },
+                onclick: {
+                    enable: true,
+                    mode: 'push'
+                },
+                resize: true
+            },
+            modes: {
+                grab: {
+                    distance: 160,
+                    line_linked: {
+                        opacity: 0.5
+                    }
+                },
+                push: {
+                    particles_nb: 3
+                }
+            }
+        },
+        retina_detect: true
+    });
+}
+
 
 /* --------------------------------------------------------------------------
    1. HTML5 CANVAS TECH PARTICLES BACKGROUND
